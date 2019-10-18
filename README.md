@@ -1,4 +1,4 @@
-# GamesOfLegendsScrapper
+# GamesOfLegends Scrapper
 Obtains the match data of the 2019 World Championship*, displaying the games stats and comparing victors stats with their defeated enemy stats
 
 *By default the scrapper obtains the data from 2019 World Championship with method start(), but with method startTournament() you can the desire tournament
@@ -26,7 +26,7 @@ The following parameters can be divided in two categories, parameters correspond
 - Number of Barons obtained
 - First Blood (boolean 0/1)
 - Total gold (k)
-- Region of procedence
+- Region of origin
 - Side of the map (blue/red)
 - Kills
 - Deaths
