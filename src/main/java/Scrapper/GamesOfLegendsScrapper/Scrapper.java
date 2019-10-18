@@ -16,9 +16,24 @@ public class Scrapper {
 	
 	 public void start(String dbName) {
 		 start(url,dbName);
-		 System.out.println("Your db is ready!");
+		 System.out.println("Your "+dbName+" database is ready!");
 	 }
-	 
+
+	 public void startTournament(String url, String dbName){
+	 	try{
+	 		PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
+	 		getMatches(url,writer, " ");
+			System.out.println("Your "+dbName+" database is ready!");
+		}catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	 }
+
 	 private void start(String url, String dbName) {
 		 if (getStatusConnectionCode(url) == 200) {
 			 try {

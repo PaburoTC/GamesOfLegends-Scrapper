@@ -4,8 +4,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        String dbName = "db2";
+        String dbName = "World Championship 2019";
         Scrapper scrapper = new Scrapper();
-        scrapper.start(dbName);
+        //scrapper.start(dbName);
+        scrapper.startTournament("https://gol.gg/tournament/tournament-stats/EU%20Master%20Summer%202019/","EU Masters");
     }
 }
