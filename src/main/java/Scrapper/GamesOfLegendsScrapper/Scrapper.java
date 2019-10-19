@@ -13,45 +13,79 @@ import org.jsoup.select.Elements;
 
 public class Scrapper {
 	 final String url = "https://gol.gg/tournament/list/region-ALL/";
-	
-	 public void start(String dbName) {
-		 start(url,dbName);
-		 System.out.println("Your "+dbName+" database is ready!");
-	 }
 
 	 public void startTournament(String url, String dbName){
-	 	try{
-	 		PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
-	 		getMatches(url,writer, " ");
-			System.out.println("Your "+dbName+" database is ready!");
-		}catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+	 	startTournament(url, dbName, "");
+	 	System.out.println("Your "+dbName+" database is ready!");
 	 }
 
-	 private void start(String url, String dbName) {
-		 if (getStatusConnectionCode(url) == 200) {
+	 private void startTournament(String url, String dbName, String phase){
+		 try{
+			 PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
+			 writer.println("Partido,Fase,Duracion,Ganador,Primera Torre Ganador,Numero de Torres Derribadas Ganador,Numero total de Dragones Ganador,Dragones de Viento Ganador,Dragones de Ocenado Ganador,Dragones de Montana Ganador,Dragones Infernales Ganador,Dragones Ancianos Ganador,Numero de Barones Nashor Ganador,Primera Sangre Ganador,Oro Ganador,Region Ganador,Lado del mapa Ganador,Asesinatos Ganador, Muertes Ganador, Asesinatos/Muertes Ganador,Perdedor,Primera Torre Perdedor,Numero de Torres Derribadas Perdedor,Numero total de Dragones Perdedor,Dragones de Viento Perdedor,Dragones de Ocenado Perdedor,Dragones de Montana Perdedor,Dragones Infernales Perdedor,Dragones Ancianos Perdedor,Numero de Barones Nashor Perdedor,Primera Sangre Perdedor,Oro Perdedor,Region Perdedor,Lado del mapa Perdedor,Asesinatos Perdedor, Muertes Perdedor, Asesinatos/Muertes Perdedor");
+			 getMatches(url,writer,phase);
+			 writer.close();
+		 }catch (FileNotFoundException e) {
+			 e.printStackTrace();
+		 } catch (UnsupportedEncodingException e) {
+			 e.printStackTrace();
+		 }
+	 }
+
+	 public void startWorldChampionship2019(){
+	 	String playInUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%20Play-In%202019/";
+	 	String groupPhaseUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%202019/";
+	 	String knockoutStageUrl="";
+		 try {
+			 PrintWriter writer;
+			 writer = new PrintWriter("World Championship 2019"+".csv","UTF-8");
+			 writer.println("Partido,Fase,Duracion,Ganador,Primera Torre Ganador,Numero de Torres Derribadas Ganador,Numero total de Dragones Ganador,Dragones de Viento Ganador,Dragones de Ocenado Ganador,Dragones de Montaña Ganador,Dragones Infernales Ganador,Dragones Ancianos Ganador,Numero de Barones Nashor Ganador,Primera Sangre Ganador,Oro Ganador,Region Ganador,Lado del mapa Ganador,Asesinatos Ganador, Muertes Ganador, Asesinatos/Muertes Ganador,Perdedor,Primera Torre Perdedor,Numero de Torres Derribadas Perdedor,Numero total de Dragones Perdedor,Dragones de Viento Perdedor,Dragones de Ocenado Perdedor,Dragones de Montaña Perdedor,Dragones Infernales Perdedor,Dragones Ancianos Perdedor,Numero de Barones Nashor Perdedor,Primera Sangre Perdedor,Oro Perdedor,Region Perdedor,Lado del mapa Perdedor,Asesinatos Perdedor, Muertes Perdedor, Asesinatos/Muertes Perdedor");
+			 getMatches(playInUrl,writer, "playIn");
+			 getMatches(groupPhaseUrl,writer, "GroupPhase");
+			 getMatches(knockoutStageUrl,writer, "knockoutStage");
+			 System.out.println("Your World Championship 2019 database is ready!");
+			 writer.close();
+		 } catch (FileNotFoundException e) {
+			 e.printStackTrace();
+		 } catch (UnsupportedEncodingException e) {
+			 e.printStackTrace();
+		 }
+	 }
+
+	 public void start(String dbName, int nFirstTournament, int nLastTournament) {
+		start(url,dbName, nFirstTournament,nLastTournament);
+		System.out.println("Your "+dbName+" database is ready!");
+	}
+
+	 private void start(String url, String dbName, int nFirstTournament, int nLastTournament) {
+		 if(nLastTournament<nFirstTournament){
+		 	System.out.println("start: Invalid arguments, nLastTournament can not be less than nFirtsTournament");
+		 	return;
+		 }
+		 if(nLastTournament<1){
+		 	System.out.println("start: Invalid arguments, nFirstTournament starts on 1");
+		 	return;
+		 }
+	 	 if (getStatusConnectionCode(url) == 200) {
 			 try {
 				 	PrintWriter writer;
 				 	writer = new PrintWriter(dbName+".csv","UTF-8");
 				 	writer.println("Partido,Fase,Duracion,Ganador,Primera Torre Ganador,Numero de Torres Derribadas Ganador,Numero total de Dragones Ganador,Dragones de Viento Ganador,Dragones de Ocenado Ganador,Dragones de Montaña Ganador,Dragones Infernales Ganador,Dragones Ancianos Ganador,Numero de Barones Nashor Ganador,Primera Sangre Ganador,Oro Ganador,Region Ganador,Lado del mapa Ganador,Asesinatos Ganador, Muertes Ganador, Asesinatos/Muertes Ganador,Perdedor,Primera Torre Perdedor,Numero de Torres Derribadas Perdedor,Numero total de Dragones Perdedor,Dragones de Viento Perdedor,Dragones de Ocenado Perdedor,Dragones de Montaña Perdedor,Dragones Infernales Perdedor,Dragones Ancianos Perdedor,Numero de Barones Nashor Perdedor,Primera Sangre Perdedor,Oro Perdedor,Region Perdedor,Lado del mapa Perdedor,Asesinatos Perdedor, Muertes Perdedor, Asesinatos/Muertes Perdedor");
 					Document document = getHtmlDocument(url);            
 		            Elements matches = document.getElementsByClass("col-xs-12").get(5).children().get(0).children().get(1).children();
-		            String groupPhase = getTournamentPhase(matches.get(1));
-		            String playIn = getTournamentPhase(matches.get(2));
-		            getMatches(groupPhase,writer,"Group Phase");
-		            getMatches(playIn,writer,"Play In");
+		            String localurl ="";
+		            for(int i = nFirstTournament; i<nLastTournament; i++){
+		            	localurl = getTournamentUrl(matches.get(i));
+						getMatches(localurl,writer,"Tournament " + i);
+					}
+		            /*String groupPhaseUrl = getTournamentUrl(matches.get(1));
+		            String playInUrl = getTournamentUrl(matches.get(2));
+		            getMatches(groupPhaseUrl,writer,"Group Phase");
+		            getMatches(playInUrl,writer,"Play In");*/
 					writer.close();
 				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			 
@@ -60,7 +94,7 @@ public class Scrapper {
 		 }
 	 }
 	 
-	 private String getTournamentPhase(Element elem) {
+	 private String getTournamentUrl(Element elem) {
 		 String[] parts = elem.children().get(0).children().get(0).attr("href").split("/");
 		 String result = "https://gol.gg/tournament/";
 		 for(int i = 1; i<parts.length;i++) {			 
