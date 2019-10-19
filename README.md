@@ -38,9 +38,14 @@ An example is shown in the repository (example.csv)
 
 
 ## Public methods
-### start(String dbName)
+Each method will create one .csv file with selected tournaments data.
+### startWorldChampionship2019(String dbName)
 By default start method, obtains the data from the 2019 World Championship match by match. Takes as an argument the name of the .csv about to be created, which will be saved inside the scrapper folder.
 ### startTournament(String url, String dbName) 
 Method that obtains de data from the selected tournament. This can be done by passing the tournaments url as the first argument. To find your desired url, go to https://gol.gg/tournament/list/region-ALL/ where all tournaments available on gol.gg are displayed. Click on the desired tournament and copy its url. The second argument takes the name of the desired database to be created.
 
-WARNING: This method will not fill the column "Phase" as there is no information on gol.gg to relate each match to its corresponding phase in the selected tournament.
+WARNING: This method will leave the column "Phase"  blank as there is no information on gol.gg to relate each match to its corresponding phase in the selected tournament.
+
+### start(String dbName, int nFirstTournament, int nLastTournament)
+Obtains the data from the tournaments in range [nFirstTournament,nLastTournament], being 1 the first tournament displayed in https://gol.gg/tournament/list/region-ALL/ and being 1 <= nLastTournament <= last tournament from current season. To obtain the data from tournaments from previous seasons get their url and use startTournament(String url, String dbname) as explained above
+

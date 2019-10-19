@@ -32,17 +32,17 @@ public class Scrapper {
 		 }
 	 }
 
-	 public void startWorldChampionship2019(){
+	 public void startWorldChampionship2019(String dbName){
 	 	String playInUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%20Play-In%202019/";
 	 	String groupPhaseUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%202019/";
 	 	String knockoutStageUrl="";
 		 try {
 			 PrintWriter writer;
-			 writer = new PrintWriter("World Championship 2019"+".csv","UTF-8");
+			 writer = new PrintWriter(dbName+".csv","UTF-8");
 			 writer.println("Partido,Fase,Duracion,Ganador,Primera Torre Ganador,Numero de Torres Derribadas Ganador,Numero total de Dragones Ganador,Dragones de Viento Ganador,Dragones de Ocenado Ganador,Dragones de Montaña Ganador,Dragones Infernales Ganador,Dragones Ancianos Ganador,Numero de Barones Nashor Ganador,Primera Sangre Ganador,Oro Ganador,Region Ganador,Lado del mapa Ganador,Asesinatos Ganador, Muertes Ganador, Asesinatos/Muertes Ganador,Perdedor,Primera Torre Perdedor,Numero de Torres Derribadas Perdedor,Numero total de Dragones Perdedor,Dragones de Viento Perdedor,Dragones de Ocenado Perdedor,Dragones de Montaña Perdedor,Dragones Infernales Perdedor,Dragones Ancianos Perdedor,Numero de Barones Nashor Perdedor,Primera Sangre Perdedor,Oro Perdedor,Region Perdedor,Lado del mapa Perdedor,Asesinatos Perdedor, Muertes Perdedor, Asesinatos/Muertes Perdedor");
-			 getMatches(playInUrl,writer, "playIn");
+			 //getMatches(knockoutStageUrl,writer, "knockoutStage");
 			 getMatches(groupPhaseUrl,writer, "GroupPhase");
-			 getMatches(knockoutStageUrl,writer, "knockoutStage");
+			 getMatches(playInUrl,writer, "playIn");
 			 System.out.println("Your World Championship 2019 database is ready!");
 			 writer.close();
 		 } catch (FileNotFoundException e) {
@@ -74,7 +74,7 @@ public class Scrapper {
 					Document document = getHtmlDocument(url);            
 		            Elements matches = document.getElementsByClass("col-xs-12").get(5).children().get(0).children().get(1).children();
 		            String localurl ="";
-		            for(int i = nFirstTournament; i<nLastTournament; i++){
+		            for(int i = nFirstTournament; i<=nLastTournament; i++){
 		            	localurl = getTournamentUrl(matches.get(i));
 						getMatches(localurl,writer,"Tournament " + i);
 					}
