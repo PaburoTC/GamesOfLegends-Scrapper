@@ -1,7 +1,7 @@
 # GamesOfLegends Scrapper
-Obtains the match data of the 2019 World Championship*, displaying the games stats and comparing victors stats with their defeated enemy stats
+Obtains the match data from any tournament displayed in https://gol.gg, displaying all the data obtained in .csv format. 
 
-*By default the scrapper obtains the data from 2019 World Championship with method start(), but with method startTournament() you can the desire tournament
+By default the scrapper obtains the data from 2019 World Championship with method startWorldChampionship2019(), but with methods such as startTournament() and start(), which willed be explained in section _Public methods_, you can obtain the desired data from any tournament you desire.
 
 ## Data obtained
 The scrapper only obtains the following parameters. If you wish for more to be implemented please contact me at pablotcampos25@gmail.com
@@ -34,7 +34,7 @@ The following parameters can be divided in two categories, parameters correspond
 
 ## Data representation
 Data is represented in the order mentioned shown in _Data obtained_. First the match data is shown, followed by the winning teams stats and closed by the loosing team stats. 
-An example is shown in the repository (example.csv)
+An example is shown in the repository (example.csv). The example is writtten in spanish, as this proyect was started as part of a university assigment.
 
 
 ## Public methods
