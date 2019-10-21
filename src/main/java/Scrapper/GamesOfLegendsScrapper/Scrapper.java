@@ -14,11 +14,13 @@ import org.jsoup.select.Elements;
 public class Scrapper {
 	 final String url = "https://gol.gg/tournament/list/region-ALL/";
 
+	 //Obtains de data from selected tournament via its url, and saves it as dbName.csv
 	 public void startTournament(String url, String dbName){
 	 	startTournament(url, dbName, "");
 	 	System.out.println("Your "+dbName+" database is ready!");
 	 }
 
+	 //Auxiliary method for startTournament, invokes method getMatches(), which goes through all the matches from a tournament
 	 private void startTournament(String url, String dbName, String phase){
 		 try{
 			 PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
@@ -32,6 +34,8 @@ public class Scrapper {
 		 }
 	 }
 
+	 //Obtains the data from the World Championship 2019 and saves it as bdName.csv
+	 //It invokes the method getMatches for each phase in the tournament
 	 public void startWorldChampionship2019(String dbName){
 	 	String playInUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%20Play-In%202019/";
 	 	String groupPhaseUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%202019/";
@@ -52,11 +56,13 @@ public class Scrapper {
 		 }
 	 }
 
+	 //Obtains the data from the tournament ranging from [nFirstTournament-nLastTournament], and saves it as bdNmae.csv
 	 public void start(String dbName, int nFirstTournament, int nLastTournament) {
 		start(url,dbName, nFirstTournament,nLastTournament);
 		System.out.println("Your "+dbName+" database is ready!");
-	}
+	 }
 
+	 //Auxiliary method from star(). Obtains the url from each tournament and invokes method getMatches, which recives a tournament url as an argument
 	 private void start(String url, String dbName, int nFirstTournament, int nLastTournament) {
 		 if(nLastTournament<nFirstTournament){
 		 	System.out.println("start: Invalid arguments, nLastTournament can not be less than nFirtsTournament");
@@ -78,10 +84,6 @@ public class Scrapper {
 		            	localurl = getTournamentUrl(matches.get(i));
 						getMatches(localurl,writer,"Tournament " + i);
 					}
-		            /*String groupPhaseUrl = getTournamentUrl(matches.get(1));
-		            String playInUrl = getTournamentUrl(matches.get(2));
-		            getMatches(groupPhaseUrl,writer,"Group Phase");
-		            getMatches(playInUrl,writer,"Play In");*/
 					writer.close();
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
@@ -93,7 +95,8 @@ public class Scrapper {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
 	 }
-	 
+
+	 //Return the url of a tournament given its position in the html code of https://gol.gg/tournament/list/region-ALL/
 	 private String getTournamentUrl(Element elem) {
 		 String[] parts = elem.children().get(0).children().get(0).attr("href").split("/");
 		 String result = "https://gol.gg/tournament/";
@@ -103,7 +106,9 @@ public class Scrapper {
 		 System.out.println();		 
 		 return result;
 	 }
-	 
+
+	 //Recives the list of matches from the tournament as an url. It checks if a match is a BO1 or a BO5, which are treated differently in the scrapper.
+	 //Once a match has been classified as a BO1 or BO5, it is send to matchDataBO1 or matchDtaBO5 as it proceeds
 	 private void getMatches(String url, PrintWriter writer,String phase) {
 		 if (getStatusConnectionCode(url) == 200) {			 			 			
 			 Document document = getHtmlDocument(url);            
@@ -120,7 +125,8 @@ public class Scrapper {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
 	 }
-	 
+
+	 //Manages the games of BO5 format. It identifies the victors of each match of the BO5 game and invokes the method matchDataBO1 with each indivual match correspondig to its BO5 game
 	 private void matchDataBO5(String url,PrintWriter db, String matchname, String phase) {
 		 //if(victor == -1)return;
 		 if (getStatusConnectionCode(url) == 200) {
@@ -145,7 +151,8 @@ public class Scrapper {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }		 		 
 	 }
-	 
+
+	 //Returns and array of ints, victors[n] will be 1 if the match at position n+1 was won by blue side, and 0 if red won
 	 private int[] victors(Elements elem) {
 		 int[] victors = new int[elem.size()-1];
 		 for(int i = 0; i <elem.size()-1; i++) {								 
@@ -153,7 +160,19 @@ public class Scrapper {
 		 }
 		 return victors;
 	}
-	  
+
+	 //Obtains the victor from each match corresponding to a BO5 game
+	 private int victorBO5(Element elem) {
+		 int result = -1;
+		 int blue = elem.children().get(0).children().size();
+		 int red  = elem.children().get(2).children().size();
+		 if(blue>red)result = 1;
+		 if(red>blue)result = 0;
+		 return result;
+	 }
+
+	 //Recieves the url of a match as an argument (url), which side won that match, the name of the match (match) and to which phase of the tournament it belonged
+	 //It assembles the data obtained from both contenders and inserts it in the data base
 	 private void matchDataBO1(String url, PrintWriter db, int victor, String match, String phase) {
 		 if(victor == -1)return;
 		 if (getStatusConnectionCode(url) == 200) {
@@ -191,17 +210,8 @@ public class Scrapper {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
 	 }
-	 
-	 private int victorBO5(Element elem) {
-		 int result = -1;
-		 int blue = elem.children().get(0).children().size();
-		 int red  = elem.children().get(2).children().size();
-		 if(blue>red)result = 1;
-		 if(red>blue)result = 0;
-		 return result;
-	 }
-	 
-	 //Devuelve el String que contiene todas las características del contendiente elejido
+
+	 //Returns a string containing all the data from a contender in a match
 	 private String contendantData(Element elem, int blue, String region, String name) {
 		 String result = "";
 		 //result.		 
@@ -225,12 +235,14 @@ public class Scrapper {
 		 result += name + "," + firstTurret + ","+ nTurrets + "," + nTotalDrakes + "," + nWindDrakes+ "," +nOceanDrakes+ "," +nMountainDrakes + "," + nInfernalDrakes+ "," +nElderDrakes+ "," +nBaron+ "," + firstBlood+ "," + gold + "," + region + "," + side+ "," +kills;
 		 return result; 
 	 }
-	 
+
+	 //Returns the name of  contender in a match
 	 private String name(Element elem) {
 		 String result = elem.children().get(0).ownText();
 		 return result.trim();
 	 }
-	 
+
+	 //Returns the number of kills a contender obtained in a match
 	 private int kills(Element elem) {
 		 int result = -1;
 		 String k = elem.children().get(0).children().get(0).children().get(2).text();
@@ -238,7 +250,8 @@ public class Scrapper {
 		 result = Integer.parseInt(k.trim());
 		 return result;
 	 }
-	 
+
+	 //Returns the region of a contender
 	 private String region(Element elem) {
 		 	 String result ="";
 		 	 String[] parts = elem.children().get(0).attr("href").split("/");
@@ -249,7 +262,8 @@ public class Scrapper {
 		 	 result = regionAux(url);
 		 	 return result;
 	 }
-	 
+
+	 //Auxiliar method for region
 	 private String regionAux(String url) {
 		 String result = "-";
 		 if (getStatusConnectionCode(url) == 200) {
@@ -260,13 +274,15 @@ public class Scrapper {
 		 }
 		 return result;
 	 }
-	 
+
+	 //Returns the amount of gold obtained by a contender
 	 private float gold(Element elem) {
 		 	String[] g = elem.children().get(0).children().get(0).children().get(1).text().split("k");
 		 	float result = Float.parseFloat(g[0].trim());
 		 	return result;
 	 }
-	 
+
+	 //Returns if a contender obtained first blood
 	 private int firstBlood(Element elem) {
 		 int result = -1;
 		 Elements e = elem.children().get(0).children().get(0).children().get(2).children();
@@ -274,7 +290,8 @@ public class Scrapper {
 		 if(e.size()==1)result = 0;
 		 return result;
 	 }
-	 
+
+	 //Returns the number of Barons a contender obtained
 	 private int numberOfBarons(Element elem) {
 		 int result = 0;
 		 String s = elem.children().get(0).children().get(0).children().get(4).text();
@@ -282,7 +299,8 @@ public class Scrapper {
 		 result = Integer.parseInt(s.trim());
 		 return result;
 	 }
-	 
+
+	 //Returns the number of Elder Dragons a contender obtained
 	 private int numberOfElderDrakes(Element elem) {
 		  int result = 0;
 		  Elements elements = elem.children().get(0).children().get(0).children().get(3).children();
@@ -291,7 +309,8 @@ public class Scrapper {
 		  }
 		  return result;
 	 }
-	 
+
+	 //Returns the number of Infernal Dragons a contender obtained
 	 private int numberOfInfernalDrakes(Element elem) {
 		  int result = 0;
 		  Elements elements = elem.children().get(0).children().get(0).children().get(3).children();
@@ -300,7 +319,8 @@ public class Scrapper {
 		  }
 		  return result;
 	 }
-	 
+
+	 //Returns the number of Mountain Dragons a contender obtained
 	 private int numberOfMountainDrakes(Element elem) {
 		  int result = 0;
 		  Elements elements = elem.children().get(0).children().get(0).children().get(3).children();
@@ -310,7 +330,8 @@ public class Scrapper {
 		  }
 		  return result;
 	 }
-	 
+
+	 //Returns the number of Wind Dragons a contender obtained
 	 private int numberOfWindDrakes(Element elem) {
 		  int result = 0;
 		  Elements elements = elem.children().get(0).children().get(0).children().get(3).children();
@@ -320,7 +341,8 @@ public class Scrapper {
 		  }
 		  return result;
 	 }
-	 
+
+	 //Returns the number of Ocean Dragons a contender obtained
 	 private int numberOfOceanDrakes(Element elem) {
 		  int result = 0;
 		  Elements elements = elem.children().get(0).children().get(0).children().get(3).children();
@@ -330,7 +352,8 @@ public class Scrapper {
 		  }
 		  return result;
 	 }
-	 
+
+	 //Returns the duration of a game
 	 private int gameTime(Element elem) {
 		 String[] g = elem.children().get(1).text().split(":");
 		 int minutes = Integer.parseInt(g[0].trim())*60;
@@ -338,7 +361,8 @@ public class Scrapper {
 		 int result = minutes + seconds;
 		 return result;
 	 }
-	 
+
+	 //Returns if a contendant obtained first turret
 	 private int firstTurret(Element elem) {
 		 int result = -1;
 		 int size = elem.children().get(0).children().get(0).children().get(0).children().size();
@@ -346,7 +370,8 @@ public class Scrapper {
 		 if(size == 1)result = 0;
 		 return result;
 	 }
-	 
+
+	 //Returns the number of turrest a contendant destroyed
 	 private int nTurrets(Element elem) {
 		 int result = 0;
 		 String n = elem.children().get(0).children().get(0).children().get(0).text();
@@ -357,12 +382,14 @@ public class Scrapper {
 		 }
 		 return result;
 	 }
-	 
+
+	 //Returns the name of the match
 	 private String matchname(Element match) {
 		 String result = match.children().get(0).children().get(0).text().trim();
 		 return result;
 	 }
-	 
+
+	 //Returns the url of a game
 	 private String urlGame(Element match) {
 		 String result = "https://gol.gg/";
     	 String[] parts = match.children().get(0).children().get(0).attr("href").split("/");
@@ -371,7 +398,8 @@ public class Scrapper {
     	 }
     	 return result;
 	 }
-	 
+
+	 //Returns if a game is of BO1 format or BO5
 	 private int bO1(Element match) {
 		 String a =  match.children().get(2).text();
 		 if(!a.contains("-"))return -1;
@@ -382,6 +410,7 @@ public class Scrapper {
 		 if(blue >1 || red >1)return 0;
 		 return 1; 
 	 }
+
 	 //Returns 1 if blue side wins, 0 if red wins
 	 private int victor(Element match) {
 		 String a =  match.children().get(2).text();
@@ -394,13 +423,9 @@ public class Scrapper {
 		 if(blue<red)return 0;
 		 return -1; 
 	 }
-	/**
-     * Devuelve el codigo de la pagina correspondiente al estado de la pagna
-     *
-     *@param url pasamos la url a comprobar
-     *@return codigo de respuesta
-     */
-    int getStatusConnectionCode(String url) {
+
+	 //Returns the status connection of a page
+     int getStatusConnectionCode(String url) {
         Response response = null;
         try {
             return Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(100000).ignoreHttpErrors(true).execute().statusCode();
@@ -410,12 +435,8 @@ public class Scrapper {
         }
     }
 
-    /**
-     * Devuelve el html de la pagina correspondente al enlace que pasamos
-     * @param url pasamos la url de la que vamos a recuperar el html
-     * @return Documento con el HTML
-     */
-    Document getHtmlDocument(String url) {
+     //Return the html document of the page
+     Document getHtmlDocument(String url) {
         try {
             return Jsoup.connect(url).userAgent("Mozilla/5.0").timeout(100000).get();
         } catch (IOException ex) {
