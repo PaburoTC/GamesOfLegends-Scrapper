@@ -200,12 +200,15 @@ public class Scrapper {
 			 redData+=","+redDeaths+","+redKD;
 			 
 			 String result = match +","+phase+","+gameTime;
-			 if(victor==1) {
-				 result+=","+blueData+","+redData;
-			 }else {
-				 result+=","+redData+","+blueData;
-			 }
-			 db.println(result);			
+
+			 //if(victorside==0) {
+				 if (victor == 1) {
+					 result += "," + blueData + "," + redData;
+				 } else {
+					 result += "," + redData + "," + blueData;
+				 }
+				 db.println(result);
+
 		 }else {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
@@ -225,7 +228,7 @@ public class Scrapper {
 		 int nTotalDrakes = nWindDrakes + nOceanDrakes + nMountainDrakes + nInfernalDrakes + nElderDrakes;
 		 int nBaron = numberOfBarons(elem);
 		 int firstBlood = firstBlood(elem);
-		 float gold = gold(elem);
+		 int gold = gold(elem);
 		 String side ="";
 		 if(blue==1)side="azul";
 		 if(blue==0)side="rojo";
@@ -276,9 +279,11 @@ public class Scrapper {
 	 }
 
 	 //Returns the amount of gold obtained by a contender
-	 private float gold(Element elem) {
+	 private int gold(Element elem) {
+	 		int result = -1;
 		 	String[] g = elem.children().get(0).children().get(0).children().get(1).text().split("k");
-		 	float result = Float.parseFloat(g[0].trim());
+		 	float result_aux = Float.parseFloat(g[0].trim());
+		 	result = (int)(result_aux*1000);
 		 	return result;
 	 }
 
