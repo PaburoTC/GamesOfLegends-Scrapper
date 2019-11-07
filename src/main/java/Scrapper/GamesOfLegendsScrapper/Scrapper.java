@@ -43,7 +43,7 @@ public class Scrapper {
 		 try {
 			 PrintWriter writer;
 			 writer = new PrintWriter(dbName+".csv","UTF-8");
-			 writer.println("Partido,Fase,Duracion,Ganador,Primera Torre Ganador,Numero de Torres Derribadas Ganador,Numero total de Dragones Ganador,Dragones de Viento Ganador,Dragones de Ocenado Ganador,Dragones de Montaña Ganador,Dragones Infernales Ganador,Dragones Ancianos Ganador,Numero de Barones Nashor Ganador,Primera Sangre Ganador,Oro Ganador,Region Ganador,Lado del mapa Ganador,Asesinatos Ganador, Muertes Ganador, Asesinatos/Muertes Ganador,Perdedor,Primera Torre Perdedor,Numero de Torres Derribadas Perdedor,Numero total de Dragones Perdedor,Dragones de Viento Perdedor,Dragones de Ocenado Perdedor,Dragones de Montaña Perdedor,Dragones Infernales Perdedor,Dragones Ancianos Perdedor,Numero de Barones Nashor Perdedor,Primera Sangre Perdedor,Oro Perdedor,Region Perdedor,Lado del mapa Perdedor,Asesinatos Perdedor, Muertes Perdedor, Asesinatos/Muertes Perdedor");
+			 writer.println("Partido;Fase;Duracion;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Viento Azul;Dragones de Ocenado Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Viento Rojo;Dragones de Ocenado Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
 			 //getMatches(knockoutStageUrl,writer, "knockoutStage");
 			 getMatches(groupPhaseUrl,writer, "GroupPhase");
 			 getMatches(playInUrl,writer, "playIn");
@@ -179,43 +179,53 @@ public class Scrapper {
 			 Document document = getHtmlDocument(url);
 			 Elements datos = document.getElementsByClass("col-xs-12").get(4).children().get(0).children().get(0).children();
 			 int gameTime = gameTime(datos.get(0));
-			 
+			 boolean victorb = false;
+			 if(victor == 1)victorb=true;
+
 			 String blueRegion = region(datos.get(1).children().get(0));
 			 String blueName = name(datos.get(1).children().get(0));
-			 String blueData = contendantData(datos.get(2).children().get(0),1,blueRegion,blueName);
+			 String blueData = contendantData(datos.get(2).children().get(0),true,blueRegion,victorb);
 			 String redRegion = region(datos.get(1).children().get(1));
 			 String redName = name(datos.get(1).children().get(1));
-			 String redData = contendantData(datos.get(2).children().get(1),0,redRegion,redName);
-			 String[]blueDataParts = blueData.split(",");
-			 String[]redDataParts = redData.split(",");
+			 String redData = contendantData(datos.get(2).children().get(1),false,redRegion,victorb);
+			 String[]blueDataParts = blueData.split(";");
+			 String[]redDataParts = redData.split(";");
 			 
 			 float blueKills = Float.parseFloat(blueDataParts[blueDataParts.length-1]);
 			 float blueDeaths = Float.parseFloat(redDataParts[redDataParts.length-1]);
-			 float blueKD = blueKills/blueDeaths;
-			 blueData+=","+blueDeaths+","+blueKD;
+			 float blueKDF = blueKills/blueDeaths;
+			 String blueKD = kdaString(blueKDF);
+			 blueData+=";"+blueDeaths+";"+blueKD;
 			 
 			 float redKills = Float.parseFloat(redDataParts[redDataParts.length-1]);
 			 float redDeaths = Float.parseFloat(blueDataParts[blueDataParts.length-1]);
-			 float redKD = redKills/redDeaths;
-			 redData+=","+redDeaths+","+redKD;
+			 float redKDF = redKills/redDeaths;
+			 String redKD = kdaString(redKDF);
+			 redData+=";"+redDeaths+";"+redKD;
 			 
-			 String result = match +","+phase+","+gameTime;
-
-			 //if(victorside==0) {
+			 String result = match +";"+phase+";"+gameTime;
+			 result += ";" + blueData + ";" + redData;
+			 /*//if(victorside==0) {
 				 if (victor == 1) {
-					 result += "," + blueData + "," + redData;
+
 				 } else {
-					 result += "," + redData + "," + blueData;
-				 }
-				 db.println(result);
+					 result += ";" + redData + ";" + blueData;
+				 }*/
+			 db.println(result);
 
 		 }else {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
 	 }
 
+	 private String kdaString(float kda){
+	 	String a = ""+kda;
+	 	String[] b = a.split("\\.");
+	 	String result = b[0]+","+b[1];
+	 	return  result;
+	 }
 	 //Returns a string containing all the data from a contender in a match
-	 private String contendantData(Element elem, int blue, String region, String name) {
+	 private String contendantData(Element elem, boolean blue, String region, boolean victor) {
 		 String result = "";
 		 //result.		 
 		 int firstTurret = firstTurret(elem);
@@ -229,13 +239,18 @@ public class Scrapper {
 		 int nBaron = numberOfBarons(elem);
 		 int firstBlood = firstBlood(elem);
 		 int gold = gold(elem);
-		 String side ="";
+		 /*String side ="";
 		 if(blue==1)side="azul";
 		 if(blue==0)side="rojo";
 		 int blueSide = blue;
+		 */
 		 int kills = kills(elem);
-		 
-		 result += name + "," + firstTurret + ","+ nTurrets + "," + nTotalDrakes + "," + nWindDrakes+ "," +nOceanDrakes+ "," +nMountainDrakes + "," + nInfernalDrakes+ "," +nElderDrakes+ "," +nBaron+ "," + firstBlood+ "," + gold + "," + region + "," + side+ "," +kills;
+		 int victorInt = -1;
+		 boolean victorb = !(victor^blue);
+		 if(victorb)victorInt = 1;
+		 if(!victorb)victorInt = 0;
+
+		 result +=  victorInt + ";" + firstTurret + ";"+ nTurrets + ";" + nTotalDrakes + ";" + nWindDrakes+ ";" +nOceanDrakes+ ";" +nMountainDrakes + ";" + nInfernalDrakes+ ";" +nElderDrakes+ ";" +nBaron+ ";" + firstBlood+ ";" + gold + ";" + region + ";" +kills;
 		 return result; 
 	 }
 
