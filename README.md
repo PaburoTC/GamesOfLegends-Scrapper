@@ -39,8 +39,8 @@ An example is shown in the repository ("World Championship 2019.csv"). The examp
 
 ## Public methods
 Each method will create one .csv file with selected tournaments data.
-### startWorldChampionship2019(String dbName)
-By default start method, obtains the data from the 2019 World Championship match by match. Takes as an argument the name of the .csv about to be created, which will be saved inside the scrapper folder.
+### startWorldChampionship2019()
+By default start method, obtains the data from the 2019 World Championship match by match. The file name will be "World Championship 2019", which will be saved inside the scrapper folder in .csv format.
 ### startTournament(String url, String dbName) 
 Method that obtains de data from the selected tournament. This can be done by passing the tournaments url as the first argument. To find your desired url, go to https://gol.gg/tournament/list/region-ALL/ where all tournaments available on gol.gg are displayed. Click on the desired tournament and copy its url. The second argument takes the name of the desired database to be created.
 
