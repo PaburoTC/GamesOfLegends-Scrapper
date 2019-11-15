@@ -6,7 +6,7 @@ By default the scrapper obtains the data from 2019 World Championship with metho
 ## Data obtained
 The scrapper only obtains the following parameters. If you wish for more to be implemented please contact me at pablotcampos25@gmail.com
 
-The following parameters can be divided in two categories, parameters corresponding to the match itself and parameters that correspond to the teams playing the match. Team parameters will be displayed twice, first the winning team parameters followed by the losing team parameters.
+The following parameters can be divided in two categories, parameters corresponding to the match itself and parameters that correspond to the teams playing the match. Team parameters will be displayed twice, first the blue team parameters followed by the red team parameters.
 
 ### Match parameters
 - Match
@@ -15,26 +15,26 @@ The following parameters can be divided in two categories, parameters correspond
 - Winner
 
 ### Team parameters
+- Victory (boolean 0/1)
 - First Tower (boolean 0/1)
 - Number of Towers destroyed
 - Total number of Dragons obtained
-- Number of Wind Dragons obtained
+- Number of Cloud Dragons obtained
 - Number of Ocean Dragons obtained
-- Number of Earth Dragons obtained
+- Number of Mountain Dragons obtained
 - Number of Infernal Dragons obtained
 - Number of Elder Dragons obtained
 - Number of Barons obtained
 - First Blood (boolean 0/1)
 - Total gold (k)
 - Region of origin
-- Side of the map (blue/red)
 - Kills
 - Deaths
 - Kill/Deaths
 
 ## Data representation
-Data is represented in the order mentioned shown in _Data obtained_. First the match data is shown, followed by the winning teams stats and closed by the loosing team stats. 
-An example is shown in the repository (example.csv). The example is writtten in spanish, as this proyect was started as part of a university assigment.
+Data is represented in the order mentioned shown in _Data obtained_. First the match data is shown, followed by the blue teams stats and closed by the red team stats. 
+An example is shown in the repository ("World Championship 2019.csv"). The example is writtten in spanish, as this proyect was started as part of a university assigment.
 
 
 ## Public methods
