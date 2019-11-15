@@ -24,7 +24,7 @@ public class Scrapper {
 	 private void startTournament(String url, String dbName, String phase){
 		 try{
 			 PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
-             writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Viento Azul;Dragones de Ocenado Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Viento Rojo;Dragones de Ocenado Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
+             writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
              getMatches(url,writer,phase);
 			 writer.close();
 		 }catch (FileNotFoundException e) {
@@ -36,14 +36,18 @@ public class Scrapper {
 
 	 //Obtains the data from the World Championship 2019 and saves it as bdName.csv
 	 //It invokes the method getMatches for each phase in the tournament
-	 public void startWorldChampionship2019(String dbName){
+	 public void startWorldChampionship2019(){
+	 	startWorldChampionship2019("World Championship 2019");
+	 }
+
+	 private void startWorldChampionship2019(String dbName){
 	 	String playInUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%20Play-In%202019/";
 	 	String groupPhaseUrl = "https://gol.gg/tournament/tournament-stats/World%20Championship%202019/";
 	 	String knockoutStageUrl="";
 		 try {
 			 PrintWriter writer;
 			 writer = new PrintWriter(dbName+".csv","UTF-8");
-			 writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Viento Azul;Dragones de Ocenado Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Viento Rojo;Dragones de Ocenado Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
+			 writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
 			 getMatches(groupPhaseUrl,writer, "GroupPhase");
 			 getMatches(playInUrl,writer, "playIn");
 			 System.out.println("Your World Championship 2019 database is ready!");
@@ -75,7 +79,7 @@ public class Scrapper {
 			 try {
 				 	PrintWriter writer;
 				 	writer = new PrintWriter(dbName+".csv","UTF-8");
-                    writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Viento Azul;Dragones de Ocenado Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Viento Rojo;Dragones de Ocenado Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
+                    writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
 					Document document = getHtmlDocument(url);            
 		            Elements matches = document.getElementsByClass("col-xs-12").get(5).children().get(0).children().get(1).children();
 		            String localurl ="";
