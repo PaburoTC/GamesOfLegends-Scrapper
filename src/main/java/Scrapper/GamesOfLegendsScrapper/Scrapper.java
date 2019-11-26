@@ -192,14 +192,20 @@ public class Scrapper {
 			 float blueDeaths = Float.parseFloat(redDataParts[redDataParts.length-1]);
 			 float blueKDF = blueKills/blueDeaths;
 			 String blueKD = kdaString(blueKDF);
-			 blueData+=";"+blueDeaths+";"+blueKD;
-			 
+
+			 int blueGoldDif = Integer.parseInt(blueDataParts[11])-Integer.parseInt(redDataParts[11]);
+			 blueData+=";"+blueDeaths+";"+blueKD+";"+blueGoldDif;
+
+
 			 float redKills = blueDeaths;
 			 float redDeaths = blueKills;
 			 float redKDF = redKills/redDeaths;
 			 String redKD = kdaString(redKDF);
-			 redData+=";"+redDeaths+";"+redKD;
-			 
+
+			 int redGoldDif = -1*blueGoldDif;
+			 redData+=";"+redDeaths+";"+redKD + ";" + redGoldDif;
+
+
 			 String result = match +";"+phase+";"+gameTime;
 			 result += ";" + blueName+";"+blueData + ";"+redName+";" + redData;
 			 db.println(result);
