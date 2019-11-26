@@ -26,11 +26,12 @@ The following parameters can be divided in two categories, parameters correspond
 - Number of Elder Dragons obtained
 - Number of Barons obtained
 - First Blood (boolean 0/1)
-- Total gold (k)
+- Total gold 
 - Region of origin
 - Kills
 - Deaths
 - Kill/Deaths
+- Gold Diference
 
 ## Data representation
 Data is represented in the order mentioned shown in _Data obtained_. First the match data is shown, followed by the blue teams stats and closed by the red team stats. 
