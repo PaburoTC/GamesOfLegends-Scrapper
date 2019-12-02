@@ -199,7 +199,7 @@ public class Scrapper {
 
 			 int redKills = blueDeaths;
 			 int redDeaths = blueKills;
-			 float redKDF = redKills/redDeaths;
+			 float redKDF = ((float)redKills/(float)redDeaths);
 			 String redKD = kdaString(redKDF);
 
 			 int redGoldDif = -1*blueGoldDif;
