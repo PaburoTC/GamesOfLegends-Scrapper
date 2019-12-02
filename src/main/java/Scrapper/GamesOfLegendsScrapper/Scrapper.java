@@ -24,8 +24,8 @@ public class Scrapper {
 	 private void startTournament(String url, String dbName, String phase){
 		 try{
 			 PrintWriter writer = new PrintWriter(dbName + ".csv", "UTF-8");
-             writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Diferencia de Oro azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo;Diferencia de Oro rojo");
-             getMatches(url,writer,phase);
+			 writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Diferencia de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Diferencia de Oro azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Diferencia de Torres Derribadas Azul;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Diferencia de Oro rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
+			 getMatches(url,writer,phase);
 			 writer.close();
 		 }catch (FileNotFoundException e) {
 			 e.printStackTrace();
@@ -47,7 +47,7 @@ public class Scrapper {
 		 try {
 			 PrintWriter writer;
 			 writer = new PrintWriter(dbName+".csv","UTF-8");
-			 writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Diferencia de Oro azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo;Diferencia de Oro rojo");
+			 writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Diferencia de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Diferencia de Oro azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Diferencia de Torres Derribadas Azul;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Diferencia de Oro rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
 			 getMatches(groupPhaseUrl,writer, "GroupPhase");
 			 getMatches(playInUrl,writer, "playIn");
 			 System.out.println("Your World Championship 2019 database is ready!");
@@ -79,8 +79,8 @@ public class Scrapper {
 			 try {
 				 	PrintWriter writer;
 				 	writer = new PrintWriter(dbName+".csv","UTF-8");
-                    writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Diferencia de Oro azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo;Diferencia de Oro rojo");
-					Document document = getHtmlDocument(url);            
+				 	writer.println("Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Diferencia de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Diferencia de Oro azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Diferencia de Torres Derribadas Azul;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Diferencia de Oro rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo");
+				 	Document document = getHtmlDocument(url);
 		            Elements matches = document.getElementsByClass("col-xs-12").get(5).children().get(0).children().get(1).children();
 		            String localurl ="";
 		            for(int i = nFirstTournament; i<=nLastTournament; i++){
@@ -181,12 +181,12 @@ public class Scrapper {
              if(victor == 1)victorb=true;
 			 String blueRegion = region(datos.get(1).children().get(0));
 			 String blueName = name(datos.get(1).children().get(0));
-			 String blueData = contendantData(datos.get(2).children().get(0),true,blueRegion,victorb);
+			 String blueDataRaw = contendantData(datos.get(2).children().get(0),true,blueRegion,victorb);
 			 String redRegion = region(datos.get(1).children().get(1));
 			 String redName = name(datos.get(1).children().get(1));
-			 String redData = contendantData(datos.get(2).children().get(1),false,redRegion,victorb);
-			 String[]blueDataParts = blueData.split(";");
-			 String[]redDataParts = redData.split(";");
+			 String redDataRaw = contendantData(datos.get(2).children().get(1),false,redRegion,victorb);
+			 String[] blueDataParts = blueDataRaw.split(";");
+			 String[] redDataParts = redDataRaw.split(";");
 			 
 			 float blueKills = Integer.parseInt(blueDataParts[blueDataParts.length-1]);
 			 float blueDeaths = Integer.parseInt(redDataParts[redDataParts.length-1]);
@@ -194,8 +194,9 @@ public class Scrapper {
 			 String blueKD = kdaString(blueKDF);
 
 			 int blueGoldDif = Integer.parseInt(blueDataParts[11])-Integer.parseInt(redDataParts[11]);
-			 blueData+=";"+(int)(blueDeaths)+";"+blueKD+";"+blueGoldDif;
-
+			 int blueTurretDif = Integer.parseInt(blueDataParts[2])-Integer.parseInt(redDataParts[2]);
+			 blueDataRaw+=";"+(int)(blueDeaths)+";"+blueKD+";"+blueGoldDif+";"+blueTurretDif;
+			 String blueData = sortedData(blueDataRaw);
 
 			 float redKills = blueDeaths;
 			 float redDeaths = blueKills;
@@ -203,7 +204,9 @@ public class Scrapper {
 			 String redKD = kdaString(redKDF);
 
 			 int redGoldDif = -1*blueGoldDif;
-			 redData+=";"+(int)(redDeaths)+";"+redKD + ";" + redGoldDif;
+			 int redTurretDif = -1*blueTurretDif;
+			 redDataRaw+=";"+(int)(redDeaths)+";"+redKD + ";" + redGoldDif+";"+redTurretDif;
+			 String redData = sortedData(redDataRaw);
 
 
 			 String result = match +";"+phase+";"+gameTime;
@@ -212,6 +215,26 @@ public class Scrapper {
 		 }else {
 			 System.out.println("El Status Code no es OK es: " + getStatusConnectionCode(url));
 		 }
+	 }
+
+	 //Sorts the data and arranges it in the order established in README
+	 private String sortedData(String rawData){
+	 	String result = "";
+	 	String[] parts = rawData.split(";");
+	 	int i = 0;
+	 	for(i = 0; i<3; i++){
+	 		result += parts[i] + ";";
+		}
+	 	result+= parts[parts.length-1]+ ";";
+	 	for(i = 3; i<12; i++){
+	 		result += parts[i] + ";";
+	 	}
+	 	result+= parts[parts.length-2]+ ";";
+		 for(i = 12; i<16; i++){
+			 result += parts[i];
+			 if(i != 15) result +=";";
+		 }
+	 	return result;
 	 }
 
 	 //Returns a string containing all the data from a contender in a match
