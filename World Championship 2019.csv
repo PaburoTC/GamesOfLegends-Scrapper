@@ -1,121 +1,121 @@
 Partido;Fase;Duracion;Nombre azul;Gana Azul;Primera Torre Azul;Numero de Torres Derribadas Azul;Numero total de Dragones Azul;Dragones de Nube Azul;Dragones de Oceano Azul;Dragones de Montaña Azul;Dragones Infernales Azul;Dragones Ancianos Azul;Numero de Barones Nashor Azul;Primera Sangre Azul;Oro Azul;Region Azul;Asesinatos Azul; Muertes Azul; Asesinatos/Muertes Azul;Diferencia de Oro azul;Nombre Rojo;Gana Rojo;Primera Torre Rojo;Numero de Torres Derribadas Rojo;Numero total de Dragones Rojo;Dragones de Nube Rojo;Dragones de Oceano Rojo;Dragones de Montaña Rojo;Dragones Infernales Rojo;Dragones Ancianos Rojo;Numero de Barones Nashor Rojo;Primera Sangre Rojo;Oro Rojo;Region Rojo;Asesinatos Rojo; Muertes Rojo; Asesinatos/Muertes Rojo;Diferencia de Oro rojo
-G2 Esports vs FPX - Game 1;GroupPhase;2454;Funplus Phoenix;1;0;10;4;2;1;0;0;1;2;1;80000;CN;22;7;3,0;9800;G2 Esports;0;1;6;2;0;1;0;1;0;0;0;70200;EUW;7;22;0,0;-9800
+G2 Esports vs FPX - Game 1;GroupPhase;2454;Funplus Phoenix;1;0;10;4;2;1;0;0;1;2;1;80000;CN;22;7;3,0;9800;G2 Esports;0;1;6;2;0;1;0;1;0;0;0;70200;EUW;7;22;0,3181818;-9800
 G2 Esports vs FPX - Game 2;GroupPhase;1538;G2 Esports;0;0;1;2;1;0;0;1;0;0;0;38000;EUW;4;20;0,0;-13900;Funplus Phoenix;1;1;9;1;1;0;0;0;0;1;1;51900;CN;20;4;5,0;13900
-G2 Esports vs FPX - Game 3;GroupPhase;1822;Funplus Phoenix;1;1;7;3;0;1;2;0;0;2;0;55600;CN;10;8;1,0;6600;G2 Esports;0;0;1;2;0;0;1;1;0;0;1;49000;EUW;8;10;0,0;-6600
-G2 Esports vs SKT - Game 1;GroupPhase;2073;SK Telecom T1;0;1;4;3;2;0;0;1;0;1;0;61400;KR;8;10;0,0;-1700;G2 Esports;1;0;9;2;1;0;0;1;0;0;1;63100;EUW;10;8;1,0;1700
+G2 Esports vs FPX - Game 3;GroupPhase;1822;Funplus Phoenix;1;1;7;3;0;1;2;0;0;2;0;55600;CN;10;8;1,0;6600;G2 Esports;0;0;1;2;0;0;1;1;0;0;1;49000;EUW;8;10;0,8;-6600
+G2 Esports vs SKT - Game 1;GroupPhase;2073;SK Telecom T1;0;1;4;3;2;0;0;1;0;1;0;61400;KR;8;10;0,0;-1700;G2 Esports;1;0;9;2;1;0;0;1;0;0;1;63100;EUW;10;8;1,25;1700
 G2 Esports vs SKT - Game 2;GroupPhase;2159;G2 Esports;0;0;4;2;0;1;1;0;0;0;1;61200;EUW;7;21;0,0;-12100;SK Telecom T1;1;1;10;4;0;1;2;0;1;2;0;73300;KR;21;7;3,0;12100
-G2 Esports vs SKT - Game 3;GroupPhase;2020;SK Telecom T1;0;1;4;2;0;0;2;0;0;2;1;61400;KR;12;19;0,0;-3200;G2 Esports;1;0;9;3;1;0;1;1;0;0;0;64600;EUW;19;12;1,0;3200
-G2 Esports vs SKT - Game 4;GroupPhase;2161;G2 Esports;1;0;8;2;1;0;1;0;0;1;1;67200;EUW;23;22;1,0;3100;SK Telecom T1;0;1;7;4;0;3;1;0;0;1;0;64100;KR;22;23;0,0;-3100
-IG vs FPX - Game 1;GroupPhase;1705;Funplus Phoenix;1;0;9;3;0;1;1;1;0;1;0;54200;CN;17;9;1,0;9600;Invictus Gaming;0;1;1;0;0;0;0;0;0;0;1;44600;CN;9;17;0,0;-9600
-IG vs FPX - Game 2;GroupPhase;2549;Invictus Gaming;1;0;8;2;0;0;1;0;1;1;0;79800;CN;28;31;0,0;2000;Funplus Phoenix;0;1;8;4;2;1;1;0;0;1;1;77800;CN;31;28;1,0;-2000
-IG vs FPX - Game 3;GroupPhase;1549;Funplus Phoenix;1;1;9;3;0;2;0;1;0;1;1;50600;CN;20;8;2,0;7900;Invictus Gaming;0;0;3;0;0;0;0;0;0;0;0;42700;CN;8;20;0,0;-7900
-IG vs FPX - Game 4;GroupPhase;2089;Invictus Gaming;0;0;7;2;0;1;1;0;0;1;0;63900;CN;21;34;0,0;-6400;Funplus Phoenix;1;1;9;3;1;0;2;0;0;1;1;70300;CN;34;21;1,0;6400
-DWG vs G2 Esports - Game 1;GroupPhase;2061;G2 Esports;1;1;9;3;1;0;2;0;0;1;1;65400;EUW;14;9;1,0;7600;DAMWON Gaming;0;0;3;1;0;0;1;0;0;0;0;57800;KR;9;14;0,0;-7600
-DWG vs G2 Esports - Game 2;GroupPhase;2662;G2 Esports;0;0;3;1;0;0;0;0;1;0;1;76100;EUW;12;23;0,0;-14300;DAMWON Gaming;1;1;11;6;2;0;2;1;1;3;0;90400;KR;23;12;1,0;14300
-DWG vs G2 Esports - Game 3;GroupPhase;1864;G2 Esports;1;0;10;2;0;0;2;0;0;1;1;63300;EUW;18;7;2,0;11000;DAMWON Gaming;0;1;2;2;1;0;1;0;0;0;0;52300;KR;7;18;0,0;-11000
-DWG vs G2 Esports - Game 4;GroupPhase;1822;G2 Esports;1;1;9;3;0;1;0;2;0;1;1;62500;EUW;18;13;1,0;9800;DAMWON Gaming;0;0;4;1;0;1;0;0;0;0;0;52700;KR;13;18;0,0;-9800
-SKT vs Splyce - Game 1;GroupPhase;1749;Splyce;0;0;2;0;0;0;0;0;0;0;0;47800;EUW;8;14;0,0;-10100;SK Telecom T1;1;1;9;3;2;0;1;0;0;2;1;57900;KR;14;8;1,0;10100
-SKT vs Splyce - Game 2;GroupPhase;1648;SK Telecom T1;1;1;10;4;1;1;2;0;0;1;1;56500;KR;18;7;2,0;11000;Splyce;0;0;2;0;0;0;0;0;0;0;0;45500;EUW;7;18;0,0;-11000
-SKT vs Splyce - Game 3;GroupPhase;1909;SK Telecom T1;0;1;3;1;0;0;0;1;0;0;1;56600;KR;12;18;0,0;-7100;Splyce;1;0;10;3;0;1;0;2;0;2;0;63700;EUW;18;12;1,0;7100
-SKT vs Splyce - Game 4;GroupPhase;1914;SK Telecom T1;1;1;9;4;0;0;2;2;0;1;1;61000;KR;17;10;1,0;9700;Splyce;0;0;1;1;0;0;0;1;0;0;0;51300;EUW;10;17;0,0;-9700
-FPX vs Fnatic - Game 1;GroupPhase;1568;Funplus Phoenix;1;1;7;4;1;1;0;2;0;1;0;50600;CN;18;10;1,0;4800;Fnatic;0;0;1;0;0;0;0;0;0;0;1;45800;EUW;10;18;0,0;-4800
+G2 Esports vs SKT - Game 3;GroupPhase;2020;SK Telecom T1;0;1;4;2;0;0;2;0;0;2;1;61400;KR;12;19;0,0;-3200;G2 Esports;1;0;9;3;1;0;1;1;0;0;0;64600;EUW;19;12;1,5833334;3200
+G2 Esports vs SKT - Game 4;GroupPhase;2161;G2 Esports;1;0;8;2;1;0;1;0;0;1;1;67200;EUW;23;22;1,0;3100;SK Telecom T1;0;1;7;4;0;3;1;0;0;1;0;64100;KR;22;23;0,95652175;-3100
+IG vs FPX - Game 1;GroupPhase;1705;Funplus Phoenix;1;0;9;3;0;1;1;1;0;1;0;54200;CN;17;9;1,0;9600;Invictus Gaming;0;1;1;0;0;0;0;0;0;0;1;44600;CN;9;17;0,5294118;-9600
+IG vs FPX - Game 2;GroupPhase;2549;Invictus Gaming;1;0;8;2;0;0;1;0;1;1;0;79800;CN;28;31;0,0;2000;Funplus Phoenix;0;1;8;4;2;1;1;0;0;1;1;77800;CN;31;28;1,1071428;-2000
+IG vs FPX - Game 3;GroupPhase;1549;Funplus Phoenix;1;1;9;3;0;2;0;1;0;1;1;50600;CN;20;8;2,0;7900;Invictus Gaming;0;0;3;0;0;0;0;0;0;0;0;42700;CN;8;20;0,4;-7900
+IG vs FPX - Game 4;GroupPhase;2089;Invictus Gaming;0;0;7;2;0;1;1;0;0;1;0;63900;CN;21;34;0,0;-6400;Funplus Phoenix;1;1;9;3;1;0;2;0;0;1;1;70300;CN;34;21;1,6190476;6400
+DWG vs G2 Esports - Game 1;GroupPhase;2061;G2 Esports;1;1;9;3;1;0;2;0;0;1;1;65400;EUW;14;9;1,0;7600;DAMWON Gaming;0;0;3;1;0;0;1;0;0;0;0;57800;KR;9;14;0,64285713;-7600
+DWG vs G2 Esports - Game 2;GroupPhase;2662;G2 Esports;0;0;3;1;0;0;0;0;1;0;1;76100;EUW;12;23;0,0;-14300;DAMWON Gaming;1;1;11;6;2;0;2;1;1;3;0;90400;KR;23;12;1,9166666;14300
+DWG vs G2 Esports - Game 3;GroupPhase;1864;G2 Esports;1;0;10;2;0;0;2;0;0;1;1;63300;EUW;18;7;2,0;11000;DAMWON Gaming;0;1;2;2;1;0;1;0;0;0;0;52300;KR;7;18;0,3888889;-11000
+DWG vs G2 Esports - Game 4;GroupPhase;1822;G2 Esports;1;1;9;3;0;1;0;2;0;1;1;62500;EUW;18;13;1,0;9800;DAMWON Gaming;0;0;4;1;0;1;0;0;0;0;0;52700;KR;13;18;0,7222222;-9800
+SKT vs Splyce - Game 1;GroupPhase;1749;Splyce;0;0;2;0;0;0;0;0;0;0;0;47800;EUW;8;14;0,0;-10100;SK Telecom T1;1;1;9;3;2;0;1;0;0;2;1;57900;KR;14;8;1,75;10100
+SKT vs Splyce - Game 2;GroupPhase;1648;SK Telecom T1;1;1;10;4;1;1;2;0;0;1;1;56500;KR;18;7;2,0;11000;Splyce;0;0;2;0;0;0;0;0;0;0;0;45500;EUW;7;18;0,3888889;-11000
+SKT vs Splyce - Game 3;GroupPhase;1909;SK Telecom T1;0;1;3;1;0;0;0;1;0;0;1;56600;KR;12;18;0,0;-7100;Splyce;1;0;10;3;0;1;0;2;0;2;0;63700;EUW;18;12;1,5;7100
+SKT vs Splyce - Game 4;GroupPhase;1914;SK Telecom T1;1;1;9;4;0;0;2;2;0;1;1;61000;KR;17;10;1,0;9700;Splyce;0;0;1;1;0;0;0;1;0;0;0;51300;EUW;10;17;0,5882353;-9700
+FPX vs Fnatic - Game 1;GroupPhase;1568;Funplus Phoenix;1;1;7;4;1;1;0;2;0;1;0;50600;CN;18;10;1,0;4800;Fnatic;0;0;1;0;0;0;0;0;0;0;1;45800;EUW;10;18;0,5555556;-4800
 FPX vs Fnatic - Game 2;GroupPhase;1469;Fnatic;0;0;3;0;0;0;0;0;0;0;1;39000;EUW;3;18;0,0;-10100;Funplus Phoenix;1;1;8;3;1;0;2;0;0;1;0;49100;CN;18;3;6,0;10100
-FPX vs Fnatic - Game 3;GroupPhase;1617;Funplus Phoenix;0;0;4;0;0;0;0;0;0;0;1;47800;CN;11;20;0,0;-5900;Fnatic;1;1;9;4;2;0;2;0;0;1;0;53700;EUW;20;11;1,0;5900
-FPX vs Fnatic - Game 4;GroupPhase;2153;Funplus Phoenix;1;1;11;5;0;3;2;0;0;2;1;71500;CN;21;8;2,0;11500;Fnatic;0;0;3;0;0;0;0;0;0;0;0;60000;EUW;8;21;0,0;-11500
-Griffin vs IG - Game 1;GroupPhase;2633;Invictus Gaming;1;1;10;3;0;1;0;1;1;2;0;83100;CN;22;18;1,0;8900;Griffin;0;0;3;3;1;0;0;2;0;0;1;74200;KR;18;22;0,0;-8900
-Griffin vs IG - Game 2;GroupPhase;2080;Griffin;0;1;5;2;0;1;0;1;0;0;1;58700;KR;15;18;0,0;-10000;Invictus Gaming;1;0;8;3;0;0;3;0;0;2;0;68700;CN;18;15;1,0;10000
-Griffin vs IG - Game 3;GroupPhase;2193;Invictus Gaming;0;0;2;1;1;0;0;0;0;0;0;57700;CN;6;19;0,0;-11400;Griffin;1;1;11;4;0;2;0;2;0;1;1;69100;KR;19;6;3,0;11400
+FPX vs Fnatic - Game 3;GroupPhase;1617;Funplus Phoenix;0;0;4;0;0;0;0;0;0;0;1;47800;CN;11;20;0,0;-5900;Fnatic;1;1;9;4;2;0;2;0;0;1;0;53700;EUW;20;11;1,8181819;5900
+FPX vs Fnatic - Game 4;GroupPhase;2153;Funplus Phoenix;1;1;11;5;0;3;2;0;0;2;1;71500;CN;21;8;2,0;11500;Fnatic;0;0;3;0;0;0;0;0;0;0;0;60000;EUW;8;21;0,3809524;-11500
+Griffin vs IG - Game 1;GroupPhase;2633;Invictus Gaming;1;1;10;3;0;1;0;1;1;2;0;83100;CN;22;18;1,0;8900;Griffin;0;0;3;3;1;0;0;2;0;0;1;74200;KR;18;22;0,8181818;-8900
+Griffin vs IG - Game 2;GroupPhase;2080;Griffin;0;1;5;2;0;1;0;1;0;0;1;58700;KR;15;18;0,0;-10000;Invictus Gaming;1;0;8;3;0;0;3;0;0;2;0;68700;CN;18;15;1,2;10000
+Griffin vs IG - Game 3;GroupPhase;2193;Invictus Gaming;0;0;2;1;1;0;0;0;0;0;0;57700;CN;6;19;0,0;-11400;Griffin;1;1;11;4;0;2;0;2;0;1;1;69100;KR;19;6;3,1666667;11400
 Griffin vs IG - Game 4;GroupPhase;1542;Griffin;0;0;1;1;0;1;0;0;0;0;0;39100;KR;4;16;0,0;-13000;Invictus Gaming;1;1;8;2;0;1;0;1;0;1;1;52100;CN;16;4;4,0;13000
-IG vs Team Liquid;GroupPhase;1447;Invictus Gaming;1;1;9;1;1;0;0;0;0;0;1;46700;CN;18;4;4,0;10100;Team Liquid;0;0;2;2;1;1;0;0;0;0;0;36600;NA;4;18;0,0;-10100
-DWG vs AHQ;GroupPhase;1770;DAMWON Gaming;1;1;9;4;1;2;1;0;0;1;1;60200;KR;13;2;6,0;16600;ahq e-Sports Club;0;0;0;0;0;0;0;0;0;0;0;43600;TW;2;13;0,0;-16600
-DWG vs IG;GroupPhase;1925;DAMWON Gaming;1;1;7;3;1;0;1;1;0;1;0;62100;KR;22;13;1,0;6000;Invictus Gaming;0;0;2;1;0;0;0;1;0;0;1;56100;CN;13;22;0,0;-6000
-Team Liquid vs AHQ;GroupPhase;1857;Team Liquid;1;1;9;3;0;1;2;0;0;1;0;58700;NA;12;6;2,0;11500;ahq e-Sports Club;0;0;1;0;0;0;0;0;0;0;1;47200;TW;6;12;0,0;-11500
+IG vs Team Liquid;GroupPhase;1447;Invictus Gaming;1;1;9;1;1;0;0;0;0;0;1;46700;CN;18;4;4,0;10100;Team Liquid;0;0;2;2;1;1;0;0;0;0;0;36600;NA;4;18;0,22222222;-10100
+DWG vs AHQ;GroupPhase;1770;DAMWON Gaming;1;1;9;4;1;2;1;0;0;1;1;60200;KR;13;2;6,0;16600;ahq e-Sports Club;0;0;0;0;0;0;0;0;0;0;0;43600;TW;2;13;0,15384616;-16600
+DWG vs IG;GroupPhase;1925;DAMWON Gaming;1;1;7;3;1;0;1;1;0;1;0;62100;KR;22;13;1,0;6000;Invictus Gaming;0;0;2;1;0;0;0;1;0;0;1;56100;CN;13;22;0,59090906;-6000
+Team Liquid vs AHQ;GroupPhase;1857;Team Liquid;1;1;9;3;0;1;2;0;0;1;0;58700;NA;12;6;2,0;11500;ahq e-Sports Club;0;0;1;0;0;0;0;0;0;0;1;47200;TW;6;12;0,5;-11500
 Team Liquid vs DWG;GroupPhase;1938;Team Liquid;0;1;2;0;0;0;0;0;0;0;0;52000;NA;4;12;0,0;-13700;DAMWON Gaming;1;0;10;5;0;3;0;2;0;1;1;65700;KR;12;4;3,0;13700
 AHQ vs IG;GroupPhase;1956;ahq e-Sports Club;0;0;2;2;1;1;0;0;0;0;1;52400;TW;5;10;0,0;-10300;Invictus Gaming;1;1;11;3;0;1;2;0;0;2;0;62700;CN;10;5;2,0;10300
-Fnatic vs RNG;GroupPhase;1945;Fnatic;1;0;11;4;0;0;2;2;0;2;1;64000;EUW;11;3;3,0;14400;Royal Never Give Up;0;1;2;0;0;0;0;0;0;0;0;49600;CN;3;11;0,0;-14400
-SKT vs CG;GroupPhase;1986;SK Telecom T1;1;1;10;4;1;2;0;1;0;1;1;70000;KR;18;5;3,0;15000;Clutch Gaming;0;0;2;1;0;0;0;1;0;1;0;55000;NA;5;18;0,0;-15000
-CG vs RNG;GroupPhase;1780;Clutch Gaming;0;0;2;0;0;0;0;0;0;0;1;50700;NA;9;15;0,0;-9700;Royal Never Give Up;1;1;9;4;3;1;0;0;0;1;0;60400;CN;15;9;1,0;9700
+Fnatic vs RNG;GroupPhase;1945;Fnatic;1;0;11;4;0;0;2;2;0;2;1;64000;EUW;11;3;3,0;14400;Royal Never Give Up;0;1;2;0;0;0;0;0;0;0;0;49600;CN;3;11;0,27272728;-14400
+SKT vs CG;GroupPhase;1986;SK Telecom T1;1;1;10;4;1;2;0;1;0;1;1;70000;KR;18;5;3,0;15000;Clutch Gaming;0;0;2;1;0;0;0;1;0;1;0;55000;NA;5;18;0,2777778;-15000
+CG vs RNG;GroupPhase;1780;Clutch Gaming;0;0;2;0;0;0;0;0;0;0;1;50700;NA;9;15;0,0;-9700;Royal Never Give Up;1;1;9;4;3;1;0;0;0;1;0;60400;CN;15;9;1,6666666;9700
 SKT vs Fnatic;GroupPhase;1617;SK Telecom T1;0;0;2;2;0;1;1;0;0;0;1;44500;KR;7;21;0,0;-8800;Fnatic;1;1;11;1;1;0;0;0;0;1;0;53300;EUW;21;7;3,0;8800
 CG vs Fnatic;GroupPhase;2919;Clutch Gaming;0;1;8;4;1;0;2;1;0;1;0;96400;NA;25;25;1,0;-300;Fnatic;1;0;10;4;0;0;1;1;2;3;1;96700;EUW;25;25;1,0;300
-RNG vs SKT;GroupPhase;2130;Royal Never Give Up;0;0;5;4;2;0;2;0;0;1;1;63700;CN;10;13;0,0;-5500;SK Telecom T1;1;1;9;1;0;0;0;1;0;1;0;69200;KR;13;10;1,0;5500
-G2 Esports vs Griffin;GroupPhase;1709;G2 Esports;0;0;1;0;0;0;0;0;0;0;0;43300;EUW;4;23;0,0;-13100;Griffin;1;1;10;4;2;2;0;0;0;1;1;56400;KR;23;4;5,0;13100
-G2 Esports vs Griffin;GroupPhase;1639;G2 Esports;0;0;0;0;0;0;0;0;0;0;0;40000;EUW;2;19;0,0;-15300;Griffin;1;1;10;4;1;2;0;1;0;1;1;55300;KR;19;2;9,0;15300
-HKA vs Cloud9;GroupPhase;1676;Hong Kong Attitude;0;0;7;0;0;0;0;0;0;1;1;49300;TW;9;11;0,0;-2400;Cloud9;1;1;10;3;0;2;0;1;0;0;0;51700;NA;11;9;1,0;2400
-Cloud9 vs G2 Esports;GroupPhase;1917;Cloud9;0;0;2;1;0;0;0;1;0;0;0;52500;NA;15;26;0,0;-14600;G2 Esports;1;1;11;2;1;1;0;0;0;2;1;67100;EUW;26;15;1,0;14600
-HKA vs Griffin;GroupPhase;1808;Hong Kong Attitude;0;1;1;0;0;0;0;0;0;0;1;45700;TW;3;10;0,0;-13900;Griffin;1;0;11;4;1;0;0;3;0;1;0;59600;KR;10;3;3,0;13900
-G2 Esports vs HKA;GroupPhase;1782;G2 Esports;1;0;11;3;0;2;0;1;0;1;0;59800;EUW;14;5;2,0;10700;Hong Kong Attitude;0;1;3;1;1;0;0;0;0;0;1;49100;TW;5;14;0,0;-10700
-Griffin vs Cloud9;GroupPhase;1435;Griffin;1;1;9;3;0;0;2;1;0;1;1;53200;KR;21;1;21,0;18700;Cloud9;0;0;0;0;0;0;0;0;0;0;0;34500;NA;1;21;0,0;-18700
-FPX vs Splyce;GroupPhase;2336;Funplus Phoenix;1;1;10;3;1;0;0;1;1;1;0;75900;CN;16;13;1,0;8400;Splyce;0;0;2;2;0;2;0;0;0;0;1;67500;EUW;13;16;0,0;-8400
-FPX vs J Team;GroupPhase;1431;Funplus Phoenix;1;1;10;3;2;0;1;0;0;1;1;54600;CN;20;3;6,0;21300;J Team;0;0;0;0;0;0;0;0;0;0;0;33300;TW;3;20;0,0;-21300
-Splyce vs GAM Esports;GroupPhase;1989;Splyce;1;0;8;2;1;0;0;1;0;2;0;68100;EUW;20;13;1,0;6400;GAM Esports;0;1;6;3;0;0;1;2;0;0;1;61700;VN;13;20;0,0;-6400
-Splyce vs FPX;GroupPhase;2056;Splyce;1;1;11;2;0;0;0;2;0;1;1;66800;EUW;20;9;2,0;8400;Funplus Phoenix;0;0;1;2;0;2;0;0;0;0;0;58400;CN;9;20;0,0;-8400
-GAM Esports vs J Team;GroupPhase;1609;GAM Esports;0;0;1;0;0;0;0;0;0;0;1;42500;VN;9;17;0,0;-10900;J Team;1;1;9;3;2;0;0;1;0;1;0;53400;TW;17;9;1,0;10900
-J Team vs Splyce;GroupPhase;1709;J Team;0;0;2;0;0;0;0;0;0;0;0;42900;TW;5;13;0,0;-11600;Splyce;1;1;10;3;0;2;1;0;0;1;1;54500;EUW;13;5;2,0;11600
-GAM Esports vs FPX;GroupPhase;1719;GAM Esports;0;0;2;0;0;0;0;0;0;0;0;46800;VN;6;20;0,0;-12900;Funplus Phoenix;1;1;7;3;1;1;0;1;0;1;1;59700;CN;20;6;3,0;12900
-HKA vs G2 Esports;GroupPhase;1837;Hong Kong Attitude;0;0;4;1;0;0;1;0;0;0;0;51000;TW;10;14;0,0;-9700;G2 Esports;1;1;11;3;0;1;1;1;0;1;1;60700;EUW;14;10;1,0;9700
-Cloud9 vs Griffin;GroupPhase;2608;Cloud9;0;1;7;2;0;1;1;0;0;1;0;81100;NA;8;19;0,0;-6000;Griffin;1;0;11;4;0;1;2;0;1;2;1;87100;KR;19;8;2,0;6000
-Splyce vs J Team;GroupPhase;2681;Splyce;0;1;4;0;0;0;0;0;0;0;0;74900;EUW;5;16;0,0;-11400;J Team;1;0;11;6;0;3;1;1;1;3;1;86300;TW;16;5;3,0;11400
-FPX vs GAM Esports;GroupPhase;1413;Funplus Phoenix;1;1;10;2;0;0;0;2;0;1;1;50800;CN;19;2;9,0;15900;GAM Esports;0;0;0;0;0;0;0;0;0;0;0;34900;VN;2;19;0,0;-15900
+RNG vs SKT;GroupPhase;2130;Royal Never Give Up;0;0;5;4;2;0;2;0;0;1;1;63700;CN;10;13;0,0;-5500;SK Telecom T1;1;1;9;1;0;0;0;1;0;1;0;69200;KR;13;10;1,3;5500
+G2 Esports vs Griffin;GroupPhase;1709;G2 Esports;0;0;1;0;0;0;0;0;0;0;0;43300;EUW;4;23;0,0;-13100;Griffin;1;1;10;4;2;2;0;0;0;1;1;56400;KR;23;4;5,75;13100
+G2 Esports vs Griffin;GroupPhase;1639;G2 Esports;0;0;0;0;0;0;0;0;0;0;0;40000;EUW;2;19;0,0;-15300;Griffin;1;1;10;4;1;2;0;1;0;1;1;55300;KR;19;2;9,5;15300
+HKA vs Cloud9;GroupPhase;1676;Hong Kong Attitude;0;0;7;0;0;0;0;0;0;1;1;49300;TW;9;11;0,0;-2400;Cloud9;1;1;10;3;0;2;0;1;0;0;0;51700;NA;11;9;1,2222222;2400
+Cloud9 vs G2 Esports;GroupPhase;1917;Cloud9;0;0;2;1;0;0;0;1;0;0;0;52500;NA;15;26;0,0;-14600;G2 Esports;1;1;11;2;1;1;0;0;0;2;1;67100;EUW;26;15;1,7333333;14600
+HKA vs Griffin;GroupPhase;1808;Hong Kong Attitude;0;1;1;0;0;0;0;0;0;0;1;45700;TW;3;10;0,0;-13900;Griffin;1;0;11;4;1;0;0;3;0;1;0;59600;KR;10;3;3,3333333;13900
+G2 Esports vs HKA;GroupPhase;1782;G2 Esports;1;0;11;3;0;2;0;1;0;1;0;59800;EUW;14;5;2,0;10700;Hong Kong Attitude;0;1;3;1;1;0;0;0;0;0;1;49100;TW;5;14;0,35714287;-10700
+Griffin vs Cloud9;GroupPhase;1435;Griffin;1;1;9;3;0;0;2;1;0;1;1;53200;KR;21;1;21,0;18700;Cloud9;0;0;0;0;0;0;0;0;0;0;0;34500;NA;1;21;0,04761905;-18700
+FPX vs Splyce;GroupPhase;2336;Funplus Phoenix;1;1;10;3;1;0;0;1;1;1;0;75900;CN;16;13;1,0;8400;Splyce;0;0;2;2;0;2;0;0;0;0;1;67500;EUW;13;16;0,8125;-8400
+FPX vs J Team;GroupPhase;1431;Funplus Phoenix;1;1;10;3;2;0;1;0;0;1;1;54600;CN;20;3;6,0;21300;J Team;0;0;0;0;0;0;0;0;0;0;0;33300;TW;3;20;0,15;-21300
+Splyce vs GAM Esports;GroupPhase;1989;Splyce;1;0;8;2;1;0;0;1;0;2;0;68100;EUW;20;13;1,0;6400;GAM Esports;0;1;6;3;0;0;1;2;0;0;1;61700;VN;13;20;0,65;-6400
+Splyce vs FPX;GroupPhase;2056;Splyce;1;1;11;2;0;0;0;2;0;1;1;66800;EUW;20;9;2,0;8400;Funplus Phoenix;0;0;1;2;0;2;0;0;0;0;0;58400;CN;9;20;0,45;-8400
+GAM Esports vs J Team;GroupPhase;1609;GAM Esports;0;0;1;0;0;0;0;0;0;0;1;42500;VN;9;17;0,0;-10900;J Team;1;1;9;3;2;0;0;1;0;1;0;53400;TW;17;9;1,8888888;10900
+J Team vs Splyce;GroupPhase;1709;J Team;0;0;2;0;0;0;0;0;0;0;0;42900;TW;5;13;0,0;-11600;Splyce;1;1;10;3;0;2;1;0;0;1;1;54500;EUW;13;5;2,6;11600
+GAM Esports vs FPX;GroupPhase;1719;GAM Esports;0;0;2;0;0;0;0;0;0;0;0;46800;VN;6;20;0,0;-12900;Funplus Phoenix;1;1;7;3;1;1;0;1;0;1;1;59700;CN;20;6;3,3333333;12900
+HKA vs G2 Esports;GroupPhase;1837;Hong Kong Attitude;0;0;4;1;0;0;1;0;0;0;0;51000;TW;10;14;0,0;-9700;G2 Esports;1;1;11;3;0;1;1;1;0;1;1;60700;EUW;14;10;1,4;9700
+Cloud9 vs Griffin;GroupPhase;2608;Cloud9;0;1;7;2;0;1;1;0;0;1;0;81100;NA;8;19;0,0;-6000;Griffin;1;0;11;4;0;1;2;0;1;2;1;87100;KR;19;8;2,375;6000
+Splyce vs J Team;GroupPhase;2681;Splyce;0;1;4;0;0;0;0;0;0;0;0;74900;EUW;5;16;0,0;-11400;J Team;1;0;11;6;0;3;1;1;1;3;1;86300;TW;16;5;3,2;11400
+FPX vs GAM Esports;GroupPhase;1413;Funplus Phoenix;1;1;10;2;0;0;0;2;0;1;1;50800;CN;19;2;9,0;15900;GAM Esports;0;0;0;0;0;0;0;0;0;0;0;34900;VN;2;19;0,10526316;-15900
 CG vs SKT;GroupPhase;1570;Clutch Gaming;0;0;0;0;0;0;0;0;0;0;0;36800;NA;2;16;0,0;-17000;SK Telecom T1;1;1;10;4;1;0;0;3;0;1;1;53800;KR;16;2;8,0;17000
-RNG vs Fnatic;GroupPhase;2181;Royal Never Give Up;1;0;9;2;0;1;0;1;0;1;1;69900;CN;15;7;2,0;9500;Fnatic;0;1;2;3;0;2;1;0;0;0;0;60400;EUW;7;15;0,0;-9500
-G2 Esports vs Cloud9;GroupPhase;1477;G2 Esports;1;1;10;2;0;0;2;0;0;1;1;53600;EUW;26;13;2,0;14600;Cloud9;0;0;2;0;0;0;0;0;0;0;0;39000;NA;13;26;0,0;-14600
-Griffin vs HKA;GroupPhase;2271;Griffin;1;0;8;3;1;1;0;1;0;1;0;74300;KR;16;9;1,0;11700;Hong Kong Attitude;0;1;2;2;0;1;0;1;0;0;1;62600;TW;9;16;0,0;-11700
-J Team vs GAM Esports;GroupPhase;2346;J Team;0;0;1;1;0;0;0;1;0;0;1;66100;TW;12;22;0,0;-7700;GAM Esports;1;1;7;3;1;1;0;1;0;0;0;73800;VN;22;12;1,0;7700
-FPX vs Splyce;GroupPhase;2093;Funplus Phoenix;1;0;9;2;1;0;1;0;0;1;1;68900;CN;18;11;1,0;9400;Splyce;0;1;4;3;1;1;1;0;0;0;0;59500;EUW;11;18;0,0;-9400
-AHQ vs Team Liquid;GroupPhase;2522;ahq e-Sports Club;0;0;6;2;0;0;1;1;0;1;0;74700;TW;22;19;1,0;-2500;Team Liquid;1;1;8;4;0;0;1;2;1;1;1;77200;NA;19;22;0,0;2500
-IG vs DWG;GroupPhase;2294;Invictus Gaming;0;1;6;3;0;2;1;0;0;0;0;66900;CN;13;22;0,0;-8400;DAMWON Gaming;1;0;10;3;0;0;2;0;1;2;1;75300;KR;22;13;1,0;8400
-Cloud9 vs HKA;GroupPhase;2822;Cloud9;1;1;10;4;0;0;1;2;1;2;1;89100;NA;18;19;0,0;8700;Hong Kong Attitude;0;0;2;2;0;1;1;0;0;0;0;80400;TW;19;18;1,0;-8700
-Griffin vs G2 Esports;GroupPhase;1788;Griffin;0;0;2;1;0;0;1;0;0;0;0;48800;KR;7;16;0,0;-10900;G2 Esports;1;1;11;3;1;0;2;0;0;1;1;59700;EUW;16;7;2,0;10900
-AHQ vs DWG;GroupPhase;1656;ahq e-Sports Club;0;1;1;1;0;1;0;0;0;0;1;42100;TW;6;9;0,0;-9600;DAMWON Gaming;1;0;9;3;1;1;1;0;0;1;0;51700;KR;9;6;1,0;9600
-Team Liquid vs IG;GroupPhase;2027;Team Liquid;0;0;5;2;1;1;0;0;0;0;1;58800;NA;11;17;0,0;-6399;Invictus Gaming;1;1;11;3;2;0;0;1;0;1;0;65199;CN;17;11;1,0;6399
-Fnatic vs CG;GroupPhase;2344;Fnatic;1;0;8;2;0;1;0;0;1;0;1;75000;EUW;23;12;1,0;9200;Clutch Gaming;0;1;5;4;0;2;2;0;0;0;0;65800;NA;12;23;0,0;-9200
-SKT vs RNG;GroupPhase;2564;SK Telecom T1;1;0;10;4;1;0;2;1;0;2;0;82700;KR;18;23;0,0;0;Royal Never Give Up;0;1;7;3;0;0;0;2;1;1;1;82700;CN;23;18;1,0;0
+RNG vs Fnatic;GroupPhase;2181;Royal Never Give Up;1;0;9;2;0;1;0;1;0;1;1;69900;CN;15;7;2,0;9500;Fnatic;0;1;2;3;0;2;1;0;0;0;0;60400;EUW;7;15;0,46666667;-9500
+G2 Esports vs Cloud9;GroupPhase;1477;G2 Esports;1;1;10;2;0;0;2;0;0;1;1;53600;EUW;26;13;2,0;14600;Cloud9;0;0;2;0;0;0;0;0;0;0;0;39000;NA;13;26;0,5;-14600
+Griffin vs HKA;GroupPhase;2271;Griffin;1;0;8;3;1;1;0;1;0;1;0;74300;KR;16;9;1,0;11700;Hong Kong Attitude;0;1;2;2;0;1;0;1;0;0;1;62600;TW;9;16;0,5625;-11700
+J Team vs GAM Esports;GroupPhase;2346;J Team;0;0;1;1;0;0;0;1;0;0;1;66100;TW;12;22;0,0;-7700;GAM Esports;1;1;7;3;1;1;0;1;0;0;0;73800;VN;22;12;1,8333334;7700
+FPX vs Splyce;GroupPhase;2093;Funplus Phoenix;1;0;9;2;1;0;1;0;0;1;1;68900;CN;18;11;1,0;9400;Splyce;0;1;4;3;1;1;1;0;0;0;0;59500;EUW;11;18;0,6111111;-9400
+AHQ vs Team Liquid;GroupPhase;2522;ahq e-Sports Club;0;0;6;2;0;0;1;1;0;1;0;74700;TW;22;19;1,0;-2500;Team Liquid;1;1;8;4;0;0;1;2;1;1;1;77200;NA;19;22;0,8636364;2500
+IG vs DWG;GroupPhase;2294;Invictus Gaming;0;1;6;3;0;2;1;0;0;0;0;66900;CN;13;22;0,0;-8400;DAMWON Gaming;1;0;10;3;0;0;2;0;1;2;1;75300;KR;22;13;1,6923077;8400
+Cloud9 vs HKA;GroupPhase;2822;Cloud9;1;1;10;4;0;0;1;2;1;2;1;89100;NA;18;19;0,0;8700;Hong Kong Attitude;0;0;2;2;0;1;1;0;0;0;0;80400;TW;19;18;1,0555556;-8700
+Griffin vs G2 Esports;GroupPhase;1788;Griffin;0;0;2;1;0;0;1;0;0;0;0;48800;KR;7;16;0,0;-10900;G2 Esports;1;1;11;3;1;0;2;0;0;1;1;59700;EUW;16;7;2,2857144;10900
+AHQ vs DWG;GroupPhase;1656;ahq e-Sports Club;0;1;1;1;0;1;0;0;0;0;1;42100;TW;6;9;0,0;-9600;DAMWON Gaming;1;0;9;3;1;1;1;0;0;1;0;51700;KR;9;6;1,5;9600
+Team Liquid vs IG;GroupPhase;2027;Team Liquid;0;0;5;2;1;1;0;0;0;0;1;58800;NA;11;17;0,0;-6399;Invictus Gaming;1;1;11;3;2;0;0;1;0;1;0;65199;CN;17;11;1,5454545;6399
+Fnatic vs CG;GroupPhase;2344;Fnatic;1;0;8;2;0;1;0;0;1;0;1;75000;EUW;23;12;1,0;9200;Clutch Gaming;0;1;5;4;0;2;2;0;0;0;0;65800;NA;12;23;0,5217391;-9200
+SKT vs RNG;GroupPhase;2564;SK Telecom T1;1;0;10;4;1;0;2;1;0;2;0;82700;KR;18;23;0,0;0;Royal Never Give Up;0;1;7;3;0;0;0;2;1;1;1;82700;CN;23;18;1,2777778;0
 GAM Esports vs Splyce;GroupPhase;1828;GAM Esports;0;0;3;1;0;1;0;0;0;0;0;50600;VN;3;9;0,0;-6300;Splyce;1;1;9;3;0;0;2;1;0;1;1;56900;EUW;9;3;3,0;6300
-J Team vs FPX;GroupPhase;2199;J Team;1;0;9;1;1;0;0;0;0;2;0;68700;TW;18;11;1,0;7400;Funplus Phoenix;0;1;2;4;1;0;0;3;0;0;1;61300;CN;11;18;0,0;-7400
-DWG vs Team Liquid;GroupPhase;1865;DAMWON Gaming;0;1;2;1;0;0;1;0;0;0;0;51300;KR;9;15;0,0;-6100;Team Liquid;1;0;8;3;0;0;1;2;0;1;1;57400;NA;15;9;1,0;6100
-IG vs AHQ;GroupPhase;1780;Invictus Gaming;1;0;6;3;0;1;0;2;0;0;0;52700;CN;10;4;2,0;5600;ahq e-Sports Club;0;1;3;1;0;0;1;0;0;0;1;47100;TW;4;10;0,0;-5600
-RNG vs CG;GroupPhase;1883;Royal Never Give Up;1;1;11;2;2;0;0;0;0;1;0;61800;CN;12;5;2,0;14000;Clutch Gaming;0;0;1;2;1;0;1;0;0;0;1;47800;NA;5;12;0,0;-14000
-Fnatic vs SKT;GroupPhase;2143;Fnatic;0;0;3;0;0;0;0;0;0;0;0;63400;EUW;9;21;0,0;-8200;SK Telecom T1;1;1;9;4;1;2;1;0;0;1;1;71600;KR;21;9;2,0;8200
-Splyce vs UOL - Game 1;playIn;2732;Unicorns Of Love;1;1;11;3;0;0;1;0;2;2;0;87600;CIS;22;26;0,0;1600;Splyce;0;0;6;4;0;1;1;2;0;2;1;86000;EUW;26;22;1,0;-1600
-Splyce vs UOL - Game 2;playIn;1894;Splyce;1;1;10;2;1;1;0;0;0;2;0;64600;EUW;25;10;2,0;13700;Unicorns Of Love;0;0;2;2;0;1;1;0;0;0;1;50900;CIS;10;25;0,0;-13700
-Splyce vs UOL - Game 3;playIn;1830;Splyce;1;1;10;4;3;0;1;0;0;1;1;61600;EUW;18;11;1,0;12500;Unicorns Of Love;0;0;2;0;0;0;0;0;0;0;0;49100;CIS;11;18;0,0;-12500
-Splyce vs UOL - Game 4;playIn;2530;Unicorns Of Love;1;1;11;5;0;3;0;1;1;1;1;81200;CIS;25;12;2,0;8800;Splyce;0;0;3;1;0;0;1;0;0;2;0;72400;EUW;12;25;0,0;-8800
-Splyce vs UOL - Game 5;playIn;2271;Splyce;1;0;9;4;2;0;1;0;1;1;0;72200;EUW;20;9;2,0;7501;Unicorns Of Love;0;1;3;2;1;0;0;1;0;1;1;64699;CIS;9;20;0,0;-7501
-HKA vs ISG - Game 1;playIn;1676;Hong Kong Attitude;1;1;11;4;1;1;2;0;0;1;0;59100;TW;11;4;2,0;16400;Isurus Gaming;0;0;1;0;0;0;0;0;0;0;1;42700;LAT;4;11;0,0;-16400
-HKA vs ISG - Game 2;playIn;1981;Isurus Gaming;1;1;10;5;0;0;2;3;0;1;1;65199;LAT;14;5;2,0;10299;Hong Kong Attitude;0;0;1;0;0;0;0;0;0;0;0;54900;TW;5;14;0,0;-10299
-HKA vs ISG - Game 3;playIn;2421;Hong Kong Attitude;1;1;10;5;2;0;1;1;1;2;0;76900;TW;13;12;1,0;7200;Isurus Gaming;0;0;5;2;1;0;1;0;0;0;1;69700;LAT;12;13;0,0;-7200
-HKA vs ISG - Game 4;playIn;2202;Isurus Gaming;0;0;3;3;1;0;0;1;1;0;0;63000;LAT;7;6;1,0;-5100;Hong Kong Attitude;1;1;10;3;2;0;1;0;0;1;1;68100;TW;6;7;0,0;5100
-CG vs Royal Youth - Game 1;playIn;1799;Clutch Gaming;1;1;8;2;0;1;1;0;0;1;1;57200;NA;13;6;2,0;10800;Royal Youth;0;0;1;2;0;0;0;2;0;0;0;46400;TR;6;13;0,0;-10800
-CG vs Royal Youth - Game 2;playIn;1658;Clutch Gaming;1;1;8;3;3;0;0;0;0;1;0;57400;NA;21;9;2,0;12800;Royal Youth;0;0;2;0;0;0;0;0;0;0;1;44600;TR;9;21;0,0;-12800
-CG vs Royal Youth - Game 3;playIn;2219;Clutch Gaming;1;1;11;6;0;3;1;2;0;2;1;75000;NA;19;7;2,0;15000;Royal Youth;0;0;3;0;0;0;0;0;0;0;0;60000;TR;7;19;0,0;-15000
-DWG vs LK - Game 1;playIn;2500;Lowkey Esports.Vietnam;1;1;10;2;0;0;1;0;1;2;1;75600;VN;16;25;0,0;-2800;DAMWON Gaming;0;0;7;4;1;0;0;3;0;0;0;78400;KR;25;16;1,0;2800
-DWG vs LK - Game 2;playIn;1573;DAMWON Gaming;1;1;8;3;0;0;2;1;0;1;0;49400;KR;11;3;3,0;9600;Lowkey Esports.Vietnam;0;0;0;1;0;0;0;1;0;0;1;39800;VN;3;11;0,0;-9600
+J Team vs FPX;GroupPhase;2199;J Team;1;0;9;1;1;0;0;0;0;2;0;68700;TW;18;11;1,0;7400;Funplus Phoenix;0;1;2;4;1;0;0;3;0;0;1;61300;CN;11;18;0,6111111;-7400
+DWG vs Team Liquid;GroupPhase;1865;DAMWON Gaming;0;1;2;1;0;0;1;0;0;0;0;51300;KR;9;15;0,0;-6100;Team Liquid;1;0;8;3;0;0;1;2;0;1;1;57400;NA;15;9;1,6666666;6100
+IG vs AHQ;GroupPhase;1780;Invictus Gaming;1;0;6;3;0;1;0;2;0;0;0;52700;CN;10;4;2,0;5600;ahq e-Sports Club;0;1;3;1;0;0;1;0;0;0;1;47100;TW;4;10;0,4;-5600
+RNG vs CG;GroupPhase;1883;Royal Never Give Up;1;1;11;2;2;0;0;0;0;1;0;61800;CN;12;5;2,0;14000;Clutch Gaming;0;0;1;2;1;0;1;0;0;0;1;47800;NA;5;12;0,41666666;-14000
+Fnatic vs SKT;GroupPhase;2143;Fnatic;0;0;3;0;0;0;0;0;0;0;0;63400;EUW;9;21;0,0;-8200;SK Telecom T1;1;1;9;4;1;2;1;0;0;1;1;71600;KR;21;9;2,3333333;8200
+Splyce vs UOL - Game 1;playIn;2732;Unicorns Of Love;1;1;11;3;0;0;1;0;2;2;0;87600;CIS;22;26;0,0;1600;Splyce;0;0;6;4;0;1;1;2;0;2;1;86000;EUW;26;22;1,1818181;-1600
+Splyce vs UOL - Game 2;playIn;1894;Splyce;1;1;10;2;1;1;0;0;0;2;0;64600;EUW;25;10;2,0;13700;Unicorns Of Love;0;0;2;2;0;1;1;0;0;0;1;50900;CIS;10;25;0,4;-13700
+Splyce vs UOL - Game 3;playIn;1830;Splyce;1;1;10;4;3;0;1;0;0;1;1;61600;EUW;18;11;1,0;12500;Unicorns Of Love;0;0;2;0;0;0;0;0;0;0;0;49100;CIS;11;18;0,6111111;-12500
+Splyce vs UOL - Game 4;playIn;2530;Unicorns Of Love;1;1;11;5;0;3;0;1;1;1;1;81200;CIS;25;12;2,0;8800;Splyce;0;0;3;1;0;0;1;0;0;2;0;72400;EUW;12;25;0,48;-8800
+Splyce vs UOL - Game 5;playIn;2271;Splyce;1;0;9;4;2;0;1;0;1;1;0;72200;EUW;20;9;2,0;7501;Unicorns Of Love;0;1;3;2;1;0;0;1;0;1;1;64699;CIS;9;20;0,45;-7501
+HKA vs ISG - Game 1;playIn;1676;Hong Kong Attitude;1;1;11;4;1;1;2;0;0;1;0;59100;TW;11;4;2,0;16400;Isurus Gaming;0;0;1;0;0;0;0;0;0;0;1;42700;LAT;4;11;0,36363637;-16400
+HKA vs ISG - Game 2;playIn;1981;Isurus Gaming;1;1;10;5;0;0;2;3;0;1;1;65199;LAT;14;5;2,0;10299;Hong Kong Attitude;0;0;1;0;0;0;0;0;0;0;0;54900;TW;5;14;0,35714287;-10299
+HKA vs ISG - Game 3;playIn;2421;Hong Kong Attitude;1;1;10;5;2;0;1;1;1;2;0;76900;TW;13;12;1,0;7200;Isurus Gaming;0;0;5;2;1;0;1;0;0;0;1;69700;LAT;12;13;0,9230769;-7200
+HKA vs ISG - Game 4;playIn;2202;Isurus Gaming;0;0;3;3;1;0;0;1;1;0;0;63000;LAT;7;6;1,0;-5100;Hong Kong Attitude;1;1;10;3;2;0;1;0;0;1;1;68100;TW;6;7;0,85714287;5100
+CG vs Royal Youth - Game 1;playIn;1799;Clutch Gaming;1;1;8;2;0;1;1;0;0;1;1;57200;NA;13;6;2,0;10800;Royal Youth;0;0;1;2;0;0;0;2;0;0;0;46400;TR;6;13;0,46153846;-10800
+CG vs Royal Youth - Game 2;playIn;1658;Clutch Gaming;1;1;8;3;3;0;0;0;0;1;0;57400;NA;21;9;2,0;12800;Royal Youth;0;0;2;0;0;0;0;0;0;0;1;44600;TR;9;21;0,42857143;-12800
+CG vs Royal Youth - Game 3;playIn;2219;Clutch Gaming;1;1;11;6;0;3;1;2;0;2;1;75000;NA;19;7;2,0;15000;Royal Youth;0;0;3;0;0;0;0;0;0;0;0;60000;TR;7;19;0,36842105;-15000
+DWG vs LK - Game 1;playIn;2500;Lowkey Esports.Vietnam;1;1;10;2;0;0;1;0;1;2;1;75600;VN;16;25;0,0;-2800;DAMWON Gaming;0;0;7;4;1;0;0;3;0;0;0;78400;KR;25;16;1,5625;2800
+DWG vs LK - Game 2;playIn;1573;DAMWON Gaming;1;1;8;3;0;0;2;1;0;1;0;49400;KR;11;3;3,0;9600;Lowkey Esports.Vietnam;0;0;0;1;0;0;0;1;0;0;1;39800;VN;3;11;0,27272728;-9600
 DWG vs LK - Game 3;playIn;1986;DAMWON Gaming;1;1;11;3;1;0;2;0;0;2;0;66900;KR;14;14;1,0;10300;Lowkey Esports.Vietnam;0;0;2;1;0;0;1;0;0;0;1;56600;VN;14;14;1,0;-10300
-DWG vs LK - Game 4;playIn;1363;Lowkey Esports.Vietnam;0;0;0;0;0;0;0;0;0;0;0;32200;VN;2;13;0,0;-17400;DAMWON Gaming;1;1;10;3;1;0;1;1;0;1;1;49600;KR;13;2;6,0;17400
-FLA vs Royal Youth;playIn;1674;Royal Youth;1;1;11;3;0;2;1;0;0;1;1;54300;TR;15;5;3,0;13800;Flamengo eSports;0;0;1;0;0;0;0;0;0;0;0;40500;BR;5;15;0,0;-13800
-LK vs HKA;playIn;1822;Lowkey Esports.Vietnam;0;0;4;0;0;0;0;0;0;0;0;48500;VN;2;13;0,0;-14300;Hong Kong Attitude;1;1;10;4;1;1;0;2;0;2;1;62800;TW;13;2;6,0;14300
-FLA vs Royal Youth;playIn;2434;Flamengo eSports;0;0;3;2;1;0;1;0;0;0;0;70000;BR;12;18;0,0;-9500;Royal Youth;1;1;11;4;0;1;2;0;1;2;1;79500;TR;18;12;1,0;9500
-LK vs MEGA;playIn;2049;Lowkey Esports.Vietnam;1;0;7;2;1;1;0;0;0;1;1;63200;VN;17;9;1,0;5200;MEGA;0;1;4;1;0;1;0;0;0;0;0;58000;SEA;9;17;0,0;-5200
-FLA vs DWG;playIn;1692;Flamengo eSports;0;0;2;0;0;0;0;0;0;0;1;45400;BR;6;17;0,0;-12200;DAMWON Gaming;1;1;11;3;3;0;0;0;0;1;0;57600;KR;17;6;2,0;12200
-HKA vs MEGA;playIn;2365;Hong Kong Attitude;1;0;9;3;2;0;0;1;0;1;0;71700;TW;13;10;1,0;7100;MEGA;0;1;4;3;0;3;0;0;0;0;1;64600;SEA;10;13;0,0;-7100
-DWG vs Royal Youth;playIn;1837;DAMWON Gaming;1;0;9;5;0;2;3;0;0;1;0;60700;KR;15;8;1,0;12200;Royal Youth;0;1;2;0;0;0;0;0;0;0;1;48500;TR;8;15;0,0;-12200
-CG vs UOL;playIn;1862;Clutch Gaming;1;1;11;4;0;1;2;1;0;1;1;64400;NA;27;11;2,0;12200;Unicorns Of Love;0;0;0;0;0;0;0;0;0;1;0;52200;CIS;11;27;0,0;-12200
+DWG vs LK - Game 4;playIn;1363;Lowkey Esports.Vietnam;0;0;0;0;0;0;0;0;0;0;0;32200;VN;2;13;0,0;-17400;DAMWON Gaming;1;1;10;3;1;0;1;1;0;1;1;49600;KR;13;2;6,5;17400
+FLA vs Royal Youth;playIn;1674;Royal Youth;1;1;11;3;0;2;1;0;0;1;1;54300;TR;15;5;3,0;13800;Flamengo eSports;0;0;1;0;0;0;0;0;0;0;0;40500;BR;5;15;0,33333334;-13800
+LK vs HKA;playIn;1822;Lowkey Esports.Vietnam;0;0;4;0;0;0;0;0;0;0;0;48500;VN;2;13;0,0;-14300;Hong Kong Attitude;1;1;10;4;1;1;0;2;0;2;1;62800;TW;13;2;6,5;14300
+FLA vs Royal Youth;playIn;2434;Flamengo eSports;0;0;3;2;1;0;1;0;0;0;0;70000;BR;12;18;0,0;-9500;Royal Youth;1;1;11;4;0;1;2;0;1;2;1;79500;TR;18;12;1,5;9500
+LK vs MEGA;playIn;2049;Lowkey Esports.Vietnam;1;0;7;2;1;1;0;0;0;1;1;63200;VN;17;9;1,0;5200;MEGA;0;1;4;1;0;1;0;0;0;0;0;58000;SEA;9;17;0,5294118;-5200
+FLA vs DWG;playIn;1692;Flamengo eSports;0;0;2;0;0;0;0;0;0;0;1;45400;BR;6;17;0,0;-12200;DAMWON Gaming;1;1;11;3;3;0;0;0;0;1;0;57600;KR;17;6;2,8333333;12200
+HKA vs MEGA;playIn;2365;Hong Kong Attitude;1;0;9;3;2;0;0;1;0;1;0;71700;TW;13;10;1,0;7100;MEGA;0;1;4;3;0;3;0;0;0;0;1;64600;SEA;10;13;0,7692308;-7100
+DWG vs Royal Youth;playIn;1837;DAMWON Gaming;1;0;9;5;0;2;3;0;0;1;0;60700;KR;15;8;1,0;12200;Royal Youth;0;1;2;0;0;0;0;0;0;0;1;48500;TR;8;15;0,53333336;-12200
+CG vs UOL;playIn;1862;Clutch Gaming;1;1;11;4;0;1;2;1;0;1;1;64400;NA;27;11;2,0;12200;Unicorns Of Love;0;0;0;0;0;0;0;0;0;1;0;52200;CIS;11;27;0,4074074;-12200
 UOL vs MMM;playIn;1703;Mammoth eSports;0;0;2;1;0;0;1;0;0;0;0;42200;OCE;1;15;0,0;-10400;Unicorns Of Love;1;1;7;3;2;0;0;1;0;1;1;52600;CIS;15;1;15,0;10400
-ISG vs Splyce;playIn;2336;Isurus Gaming;0;1;4;2;2;0;0;0;0;0;1;68800;LAT;17;20;0,0;-7800;Splyce;1;0;9;2;1;0;0;1;0;2;0;76600;EUW;20;17;1,0;7800
-CG vs MMM;playIn;1476;Clutch Gaming;1;1;10;2;0;2;0;0;0;1;1;49500;NA;13;4;3,0;12000;Mammoth eSports;0;0;0;1;0;0;0;1;0;0;0;37500;OCE;4;13;0,0;-12000
-ISG vs DFM;playIn;3805;Isurus Gaming;1;1;11;4;1;0;0;1;2;2;1;112700;LAT;21;16;1,0;8700;Detonation FocusMe;0;0;6;4;1;2;0;0;1;2;0;104000;JP;16;21;0,0;-8700
-UOL vs MMM;playIn;2470;Unicorns Of Love;0;1;9;4;1;1;0;2;0;0;0;67800;CIS;10;16;0,0;-6400;Mammoth eSports;1;0;7;2;0;1;0;0;1;1;1;74200;OCE;16;10;1,0;6400
-Splyce vs DFM;playIn;2020;Splyce;0;0;2;2;0;0;2;0;0;0;0;54400;EUW;8;18;0,0;-8600;Detonation FocusMe;1;1;9;2;0;0;1;1;0;1;1;63000;JP;18;8;2,0;8600
-UOL vs CG;playIn;2333;Unicorns Of Love;1;0;0;1;0;0;0;1;0;0;0;70600;CIS;14;4;3,0;6401;Clutch Gaming;0;0;0;1;0;0;0;1;0;0;1;64199;NA;4;14;0,0;-6401
-HKA vs LK;playIn;1801;Hong Kong Attitude;0;1;3;0;0;0;0;0;0;0;1;50000;TW;9;20;0,0;-7400;Lowkey Esports.Vietnam;1;0;9;3;1;0;1;1;0;1;0;57400;VN;20;9;2,0;7400
-Royal Youth vs FLA;playIn;1457;Royal Youth;0;0;2;0;0;0;0;0;0;0;1;37100;TR;3;14;0,0;-11700;Flamengo eSports;1;1;9;3;0;1;0;2;0;1;0;48800;BR;14;3;4,0;11700
-MEGA vs LK;playIn;2402;MEGA;1;0;8;3;1;2;0;0;0;1;0;75900;SEA;21;19;1,0;2100;Lowkey Esports.Vietnam;0;1;5;1;0;1;0;0;0;1;1;73800;VN;19;21;0,0;-2100
-DWG vs FLA;playIn;1808;DAMWON Gaming;1;1;11;3;1;1;1;0;0;1;1;63800;KR;22;11;2,0;15600;Flamengo eSports;0;0;0;1;1;0;0;0;0;0;0;48200;BR;11;22;0,0;-15600
-MEGA vs HKA;playIn;2055;MEGA;0;1;4;4;1;0;2;1;0;0;1;56100;SEA;3;7;0,0;-6200;Hong Kong Attitude;1;0;8;0;0;0;0;0;0;1;0;62300;TW;7;3;2,0;6200
-Royal Youth vs DWG;playIn;2078;Royal Youth;0;0;2;1;0;0;0;1;0;0;1;56100;TR;12;17;0,0;-12500;DAMWON Gaming;1;1;9;4;0;3;0;1;0;1;0;68600;KR;17;12;1,0;12500
-Splyce vs ISG;playIn;1809;Splyce;1;1;11;4;0;1;0;3;0;1;0;56900;EUW;13;5;2,0;11500;Isurus Gaming;0;0;0;0;0;0;0;0;0;0;1;45400;LAT;5;13;0,0;-11500
+ISG vs Splyce;playIn;2336;Isurus Gaming;0;1;4;2;2;0;0;0;0;0;1;68800;LAT;17;20;0,0;-7800;Splyce;1;0;9;2;1;0;0;1;0;2;0;76600;EUW;20;17;1,1764706;7800
+CG vs MMM;playIn;1476;Clutch Gaming;1;1;10;2;0;2;0;0;0;1;1;49500;NA;13;4;3,0;12000;Mammoth eSports;0;0;0;1;0;0;0;1;0;0;0;37500;OCE;4;13;0,30769232;-12000
+ISG vs DFM;playIn;3805;Isurus Gaming;1;1;11;4;1;0;0;1;2;2;1;112700;LAT;21;16;1,0;8700;Detonation FocusMe;0;0;6;4;1;2;0;0;1;2;0;104000;JP;16;21;0,7619048;-8700
+UOL vs MMM;playIn;2470;Unicorns Of Love;0;1;9;4;1;1;0;2;0;0;0;67800;CIS;10;16;0,0;-6400;Mammoth eSports;1;0;7;2;0;1;0;0;1;1;1;74200;OCE;16;10;1,6;6400
+Splyce vs DFM;playIn;2020;Splyce;0;0;2;2;0;0;2;0;0;0;0;54400;EUW;8;18;0,0;-8600;Detonation FocusMe;1;1;9;2;0;0;1;1;0;1;1;63000;JP;18;8;2,25;8600
+UOL vs CG;playIn;2333;Unicorns Of Love;1;0;0;1;0;0;0;1;0;0;0;70600;CIS;14;4;3,0;6401;Clutch Gaming;0;0;0;1;0;0;0;1;0;0;1;64199;NA;4;14;0,2857143;-6401
+HKA vs LK;playIn;1801;Hong Kong Attitude;0;1;3;0;0;0;0;0;0;0;1;50000;TW;9;20;0,0;-7400;Lowkey Esports.Vietnam;1;0;9;3;1;0;1;1;0;1;0;57400;VN;20;9;2,2222223;7400
+Royal Youth vs FLA;playIn;1457;Royal Youth;0;0;2;0;0;0;0;0;0;0;1;37100;TR;3;14;0,0;-11700;Flamengo eSports;1;1;9;3;0;1;0;2;0;1;0;48800;BR;14;3;4,6666665;11700
+MEGA vs LK;playIn;2402;MEGA;1;0;8;3;1;2;0;0;0;1;0;75900;SEA;21;19;1,0;2100;Lowkey Esports.Vietnam;0;1;5;1;0;1;0;0;0;1;1;73800;VN;19;21;0,9047619;-2100
+DWG vs FLA;playIn;1808;DAMWON Gaming;1;1;11;3;1;1;1;0;0;1;1;63800;KR;22;11;2,0;15600;Flamengo eSports;0;0;0;1;1;0;0;0;0;0;0;48200;BR;11;22;0,5;-15600
+MEGA vs HKA;playIn;2055;MEGA;0;1;4;4;1;0;2;1;0;0;1;56100;SEA;3;7;0,0;-6200;Hong Kong Attitude;1;0;8;0;0;0;0;0;0;1;0;62300;TW;7;3;2,3333333;6200
+Royal Youth vs DWG;playIn;2078;Royal Youth;0;0;2;1;0;0;0;1;0;0;1;56100;TR;12;17;0,0;-12500;DAMWON Gaming;1;1;9;4;0;3;0;1;0;1;0;68600;KR;17;12;1,4166666;12500
+Splyce vs ISG;playIn;1809;Splyce;1;1;11;4;0;1;0;3;0;1;0;56900;EUW;13;5;2,0;11500;Isurus Gaming;0;0;0;0;0;0;0;0;0;0;1;45400;LAT;5;13;0,3846154;-11500
 MMM vs CG;playIn;2341;Mammoth eSports;0;0;1;1;0;0;0;1;0;1;1;60000;OCE;2;10;0,0;-12000;Clutch Gaming;1;1;10;5;0;3;0;1;1;1;0;72000;NA;10;2;5,0;12000
-DFM vs ISG;playIn;2369;Detonation FocusMe;0;0;3;1;0;0;1;0;0;0;0;64500;JP;12;16;0,0;-10500;Isurus Gaming;1;1;9;4;1;3;0;0;0;1;1;75000;LAT;16;12;1,0;10500
-MMM vs UOL;playIn;2255;Mammoth eSports;1;1;9;4;0;2;1;1;0;1;0;69100;OCE;18;8;2,0;8800;Unicorns Of Love;0;0;2;0;0;0;0;0;0;0;1;60300;CIS;8;18;0,0;-8800
-DFM vs Splyce;playIn;1592;Detonation FocusMe;0;0;1;1;1;0;0;0;0;0;0;41200;JP;7;22;0,0;-15500;Splyce;1;1;10;2;1;1;0;0;0;1;1;56700;EUW;22;7;3,0;15500
+DFM vs ISG;playIn;2369;Detonation FocusMe;0;0;3;1;0;0;1;0;0;0;0;64500;JP;12;16;0,0;-10500;Isurus Gaming;1;1;9;4;1;3;0;0;0;1;1;75000;LAT;16;12;1,3333334;10500
+MMM vs UOL;playIn;2255;Mammoth eSports;1;1;9;4;0;2;1;1;0;1;0;69100;OCE;18;8;2,0;8800;Unicorns Of Love;0;0;2;0;0;0;0;0;0;0;1;60300;CIS;8;18;0,44444445;-8800
+DFM vs Splyce;playIn;1592;Detonation FocusMe;0;0;1;1;1;0;0;0;0;0;0;41200;JP;7;22;0,0;-15500;Splyce;1;1;10;2;1;1;0;0;0;1;1;56700;EUW;22;7;3,142857;15500
 CG vs UOL;playIn;2284;Clutch Gaming;0;0;3;0;0;0;0;0;0;0;1;61900;NA;8;16;0,0;-6700;Unicorns Of Love;1;1;11;4;2;0;1;1;0;2;0;68600;CIS;16;8;2,0;6700
