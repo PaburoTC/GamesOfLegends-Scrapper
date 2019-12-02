@@ -188,8 +188,8 @@ public class Scrapper {
 			 String[]blueDataParts = blueData.split(";");
 			 String[]redDataParts = redData.split(";");
 			 
-			 float blueKills = Float.parseFloat(blueDataParts[blueDataParts.length-1]);
-			 float blueDeaths = Float.parseFloat(redDataParts[redDataParts.length-1]);
+			 int blueKills = Integer.parseInt(blueDataParts[blueDataParts.length-1]);
+			 int blueDeaths = Integer.parseInt(redDataParts[redDataParts.length-1]);
 			 float blueKDF = blueKills/blueDeaths;
 			 String blueKD = kdaString(blueKDF);
 
@@ -197,8 +197,8 @@ public class Scrapper {
 			 blueData+=";"+blueDeaths+";"+blueKD+";"+blueGoldDif;
 
 
-			 float redKills = blueDeaths;
-			 float redDeaths = blueKills;
+			 int redKills = blueDeaths;
+			 int redDeaths = blueKills;
 			 float redKDF = redKills/redDeaths;
 			 String redKD = kdaString(redKDF);
 
