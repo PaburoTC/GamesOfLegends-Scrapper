@@ -17,6 +17,7 @@ The following parameters can be divided in two categories, parameters correspond
 - Victory (boolean 0/1)
 - First Tower (boolean 0/1)
 - Number of Towers destroyed
+- Towers destroyed difference
 - Total number of Dragons obtained
 - Number of Cloud Dragons obtained
 - Number of Ocean Dragons obtained
@@ -26,11 +27,12 @@ The following parameters can be divided in two categories, parameters correspond
 - Number of Barons obtained
 - First Blood (boolean 0/1)
 - Total gold 
+- Gold Diference
 - Region of origin
 - Kills
 - Deaths
 - Kill/Deaths
-- Gold Diference
+
 
 ## Data representation
 Data is represented in the order mentioned shown in _Data obtained_. First the match data is shown, followed by the blue teams stats and closed by the red team stats. 
