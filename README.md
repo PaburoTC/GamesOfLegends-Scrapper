@@ -12,7 +12,6 @@ The following parameters can be divided in two categories, parameters correspond
 - Match
 - Tournament phase
 - Game duration (seconds)
-- Winner
 
 ### Team parameters
 - Victory (boolean 0/1)
