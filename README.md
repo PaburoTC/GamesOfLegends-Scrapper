@@ -3,6 +3,8 @@ Obtains the match data from any tournament displayed in https://gol.gg, displayi
 
 By default the scrapper obtains the data from 2019 World Championship with method startWorldChampionship2019(), but with methods such as startTournament() and start(), which willed be explained in section _Public methods_, you can obtain the desired data from any tournament you desire.
 
+Project was based on the following tutorial: https://jarroba.com/scraping-java-jsoup-ejemplos/
+
 ## Data obtained
 The scrapper only obtains the following parameters. If you wish for more to be implemented please contact me at pablotcampos25@gmail.com
 
